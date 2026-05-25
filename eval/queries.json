@@ -1,0 +1,52 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "levodopa treatment Parkinson disease motor fluctuations",
+    "relevant_nct_ids": ["NCT00000001", "NCT00000002", "NCT00000003"]
+  },
+  {
+    "query_id": "Q02",
+    "query": "dopamine agonist early Parkinson disease monotherapy",
+    "relevant_nct_ids": ["NCT00000004", "NCT00000005"]
+  },
+  {
+    "query_id": "Q03",
+    "query": "deep brain stimulation subthalamic nucleus Parkinson",
+    "relevant_nct_ids": ["NCT00000006", "NCT00000007", "NCT00000008"]
+  },
+  {
+    "query_id": "Q04",
+    "query": "MAO-B inhibitor rasagiline neuroprotection Parkinson",
+    "relevant_nct_ids": ["NCT00000009", "NCT00000010", "NCT00000011"]
+  },
+  {
+    "query_id": "Q05",
+    "query": "alpha-synuclein immunotherapy Parkinson disease clinical trial",
+    "relevant_nct_ids": ["NCT00000012", "NCT00000013"]
+  },
+  {
+    "query_id": "Q06",
+    "query": "Parkinson disease gait freezing rehabilitation exercise",
+    "relevant_nct_ids": ["NCT00000014", "NCT00000015", "NCT00000016"]
+  },
+  {
+    "query_id": "Q07",
+    "query": "LRRK2 inhibitor Parkinson genetic mutation treatment",
+    "relevant_nct_ids": ["NCT00000017", "NCT00000018"]
+  },
+  {
+    "query_id": "Q08",
+    "query": "Parkinson disease dementia cognitive impairment cholinesterase inhibitor",
+    "relevant_nct_ids": ["NCT00000019", "NCT00000020", "NCT00000021", "NCT00000022"]
+  },
+  {
+    "query_id": "Q09",
+    "query": "essential tremor focused ultrasound thalamotomy",
+    "relevant_nct_ids": ["NCT00000023", "NCT00000024", "NCT00000025"]
+  },
+  {
+    "query_id": "Q10",
+    "query": "Parkinson disease dyskinesia amantadine extended release",
+    "relevant_nct_ids": ["NCT00000026", "NCT00000027"]
+  }
+]

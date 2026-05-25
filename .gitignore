@@ -1,0 +1,27 @@
+# Downloaded raw data
+data/raw/
+
+# SQLite database
+db/trials.db
+
+# Retrieval indexes
+indexes/bm25_index.pkl
+indexes/embeddings.npy
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
