@@ -97,7 +97,7 @@ python -m scripts.ingest
 # Step 3: Build the BM25 index
 python -m scripts.build_bm25_index
 
-# Step 4: Build sentence embeddings (slowest step, ~1–3 min for 3000 trials)
+# Step 4: Build sentence embeddings (slowest step; runtime depends on dataset size and machine speed)
 python -m scripts.build_embeddings
 
 # Step 5: Start the FastAPI backend (keep this terminal open)
