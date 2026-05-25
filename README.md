@@ -152,7 +152,7 @@ Metrics reported per query:
 - Data is limited to trials matching a single condition filter (Parkinson disease) from ClinicalTrials.gov.
 - The embedding model (`all-MiniLM-L6-v2`) is a general-purpose model, not specialised for biomedical text.
 - Summaries are template-based and only include fields present in the database — no language generation.
-- Relevant NCT IDs in `queries.json` are placeholder values for evaluation structure; actual relevance judgements require manual review against real retrieved results.
+- Evaluation queries are manually curated for demonstrating the evaluation workflow; relevance judgments should be reviewed and expanded before using the metrics as a rigorous benchmark.
 - No authentication, no cloud deployment, no persistent user sessions.
 
 ---
