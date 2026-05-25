@@ -89,22 +89,22 @@ Run these steps once to set up the data and indexes before starting the applicat
 
 ```bash
 # Step 1: Download raw trial data from ClinicalTrials.gov
-python scripts/download.py
+python -m scripts.download
 
 # Step 2: Parse and load trials into SQLite
-python scripts/ingest.py
+python -m scripts.ingest
 
 # Step 3: Build the BM25 index
-python scripts/build_bm25_index.py
+python -m scripts.build_bm25_index
 
 # Step 4: Build sentence embeddings (slowest step, ~1–3 min for 3000 trials)
-python scripts/build_embeddings.py
+python -m scripts.build_embeddings
 
 # Step 5: Start the FastAPI backend (keep this terminal open)
-uvicorn app.api.main:app --reload
+python -m uvicorn app.api.main:app --reload
 
 # Step 6: Start the Streamlit frontend in a second terminal
-streamlit run ui/streamlit_app.py
+python -m streamlit run ui/streamlit_app.py
 ```
 
 - FastAPI interactive docs: [http://localhost:8000/docs](http://localhost:8000/docs)
@@ -132,10 +132,10 @@ The evaluation script measures retrieval quality over 10 manually curated querie
 
 ```bash
 # Evaluate with default alpha=0.5
-python eval/evaluate.py --alpha 0.5
+python -m eval.evaluate --alpha 0.5
 
 # Evaluate with BM25-only
-python eval/evaluate.py --alpha 1.0
+python -m eval.evaluate --alpha 1.0
 ```
 
 Metrics reported per query:
