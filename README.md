@@ -34,6 +34,23 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V2.2 — Evaluation Benchmark
+
+- **Evaluation query set expanded** to 14 realistic Parkinson disease search queries covering five categories: `treatment`, `device`, `rehabilitation`, `symptoms`, and `gait_freezing`.
+- **Metrics reported:** Precision@5, Hit@5, Recall@10, and MRR (Mean Reciprocal Rank).
+- **Relevance labels** are candidate-based manual labels produced by reviewing the top-10 results per query at alpha=0.5. They are not a definitive clinical benchmark and should be treated accordingly.
+- **Hybrid alpha=0.5 performed best overall** across all four metrics.
+
+### Benchmark Results
+
+| Method | Precision@5 | Hit@5 | Recall@10 | MRR |
+|---|---:|---:|---:|---:|
+| BM25-only alpha=1.0 | 0.757 | 0.929 | 0.765 | 0.817 |
+| Semantic-only alpha=0.0 | 0.671 | 1.000 | 0.620 | 0.821 |
+| Hybrid alpha=0.5 | 0.886 | 1.000 | 1.000 | 0.907 |
+
+---
+
 ## Project Structure
 
 ```
@@ -62,6 +79,7 @@ biomedical-evidence-retrieval/
 │   └── streamlit_app.py       # Streamlit frontend
 ├── eval/
 │   ├── queries.json           # Curated evaluation queries
+│   ├── candidates_alpha_0_5.json  # Top-10 candidates used for relevance labelling
 │   └── evaluate.py            # Evaluation script
 ├── tests/
 │   ├── test_bm25_retriever.py
@@ -159,7 +177,7 @@ To narrow results, expand the "Filters (optional)" section and enter a value for
 
 ## Evaluation
 
-The evaluation script measures retrieval quality over 10 manually curated queries defined in `eval/queries.json`.
+The evaluation script measures retrieval quality over 14 manually curated queries defined in `eval/queries.json`.
 
 ```bash
 # Evaluate with default alpha=0.5
@@ -167,12 +185,17 @@ python -m eval.evaluate --alpha 0.5
 
 # Evaluate with BM25-only
 python -m eval.evaluate --alpha 1.0
+
+# Evaluate with semantic-only
+python -m eval.evaluate --alpha 0.0
 ```
 
 Metrics reported per query:
 
 - **Precision@5** — fraction of the top 5 results that are relevant
 - **Hit@5** — whether at least one relevant result appears in the top 5
+- **Recall@10** — fraction of all relevant results recovered in the top 10
+- **MRR** — reciprocal rank of the first relevant result
 
 > The API must be running before you run the evaluation script.
 
@@ -183,7 +206,7 @@ Metrics reported per query:
 - Data is limited to trials matching a single condition filter (Parkinson disease) from ClinicalTrials.gov.
 - The embedding model (`all-MiniLM-L6-v2`) is a general-purpose model, not specialised for biomedical text.
 - Summaries are template-based and only include fields present in the database — no language generation.
-- Evaluation queries are manually curated for demonstrating the evaluation workflow; relevance judgments should be reviewed and expanded before using the metrics as a rigorous benchmark.
+- Evaluation relevance labels are manually assigned by reviewing retrieved candidates; they are not a definitive clinical benchmark and should be reviewed and expanded before using the metrics as a rigorous benchmark.
 - No authentication, no cloud deployment, no persistent user sessions.
 
 ---

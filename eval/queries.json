@@ -1,52 +1,218 @@
 [
   {
     "query_id": "Q01",
-    "query": "levodopa treatment Parkinson disease motor fluctuations",
-    "relevant_nct_ids": ["NCT00000001", "NCT00000002", "NCT00000003"]
+    "category": "treatment",
+    "query": "levodopa carbidopa motor fluctuations wearing off Parkinson disease",
+    "relevant_nct_ids": [
+      "NCT05766813",
+      "NCT01766258",
+      "NCT00219284",
+      "NCT01484990",
+      "NCT05471609",
+      "NCT00642356",
+      "NCT00368108",
+      "NCT01296464"
+    ]
   },
   {
     "query_id": "Q02",
-    "query": "dopamine agonist early Parkinson disease monotherapy",
-    "relevant_nct_ids": ["NCT00000004", "NCT00000005"]
+    "category": "treatment",
+    "query": "dopamine agonist pramipexole ropinirole early Parkinson disease monotherapy",
+    "relevant_nct_ids": [
+      "NCT01723904",
+      "NCT00335166",
+      "NCT00434304",
+      "NCT01485172",
+      "NCT00144300",
+      "NCT00321854"
+    ]
   },
   {
     "query_id": "Q03",
-    "query": "deep brain stimulation subthalamic nucleus Parkinson",
-    "relevant_nct_ids": ["NCT00000006", "NCT00000007", "NCT00000008"]
+    "category": "treatment",
+    "query": "MAO-B inhibitor rasagiline selegiline neuroprotection Parkinson disease",
+    "relevant_nct_ids": [
+      "NCT01442610",
+      "NCT01098396",
+      "NCT03843944",
+      "NCT04870372",
+      "NCT01028586",
+      "NCT02278588",
+      "NCT01382342",
+      "NCT05611372",
+      "NCT01178047"
+    ]
   },
   {
     "query_id": "Q04",
-    "query": "MAO-B inhibitor rasagiline neuroprotection Parkinson",
-    "relevant_nct_ids": ["NCT00000009", "NCT00000010", "NCT00000011"]
+    "category": "treatment",
+    "query": "alpha-synuclein immunotherapy antibody Parkinson disease disease modification",
+    "relevant_nct_ids": [
+      "NCT05634876"
+    ]
   },
   {
     "query_id": "Q05",
-    "query": "alpha-synuclein immunotherapy Parkinson disease clinical trial",
-    "relevant_nct_ids": ["NCT00000012", "NCT00000013"]
+    "category": "device",
+    "query": "deep brain stimulation subthalamic nucleus globus pallidus Parkinson",
+    "relevant_nct_ids": [
+      "NCT02647372",
+      "NCT01076452",
+      "NCT07250685",
+      "NCT00053625",
+      "NCT05262348",
+      "NCT00056563",
+      "NCT02823158"
+    ]
   },
   {
     "query_id": "Q06",
-    "query": "Parkinson disease gait freezing rehabilitation exercise",
-    "relevant_nct_ids": ["NCT00000014", "NCT00000015", "NCT00000016"]
+    "category": "device",
+    "query": "focused ultrasound thalamotomy tremor Parkinson disease non-invasive",
+    "relevant_nct_ids": [
+      "NCT02692183",
+      "NCT04002596",
+      "NCT07284719",
+      "NCT07044973",
+      "NCT05624385",
+      "NCT05475340",
+      "NCT07172295",
+      "NCT01698450",
+      "NCT06259708"
+    ]
   },
   {
     "query_id": "Q07",
-    "query": "LRRK2 inhibitor Parkinson genetic mutation treatment",
-    "relevant_nct_ids": ["NCT00000017", "NCT00000018"]
+    "category": "device",
+    "query": "transcranial magnetic stimulation repetitive rTMS motor cortex Parkinson",
+    "relevant_nct_ids": [
+      "NCT03059212",
+      "NCT04638777",
+      "NCT04116216",
+      "NCT00955032",
+      "NCT06383247",
+      "NCT06583278",
+      "NCT07195773",
+      "NCT01080794",
+      "NCT07310238"
+    ]
   },
   {
     "query_id": "Q08",
-    "query": "Parkinson disease dementia cognitive impairment cholinesterase inhibitor",
-    "relevant_nct_ids": ["NCT00000019", "NCT00000020", "NCT00000021", "NCT00000022"]
+    "category": "rehabilitation",
+    "query": "physiotherapy exercise balance training falls prevention Parkinson disease",
+    "relevant_nct_ids": [
+      "NCT04063605",
+      "NCT05940077",
+      "NCT07399613",
+      "NCT07590700",
+      "NCT02476266",
+      "NCT07442370",
+      "NCT02488265",
+      "NCT02302144",
+      "NCT00518648",
+      "NCT02230267"
+    ]
   },
   {
     "query_id": "Q09",
-    "query": "essential tremor focused ultrasound thalamotomy",
-    "relevant_nct_ids": ["NCT00000023", "NCT00000024", "NCT00000025"]
+    "category": "rehabilitation",
+    "query": "speech language therapy voice dysarthria swallowing Parkinson disease",
+    "relevant_nct_ids": [
+      "NCT00123084",
+      "NCT02506205",
+      "NCT06593860",
+      "NCT06416553",
+      "NCT04966689",
+      "NCT02407067",
+      "NCT02935842",
+      "NCT02973698",
+      "NCT03700684",
+      "NCT02265315"
+    ]
   },
   {
     "query_id": "Q10",
-    "query": "Parkinson disease dyskinesia amantadine extended release",
-    "relevant_nct_ids": ["NCT00000026", "NCT00000027"]
+    "category": "symptoms",
+    "query": "Parkinson disease dementia cognitive decline cholinesterase inhibitor rivastigmine",
+    "relevant_nct_ids": [
+      "NCT03840837",
+      "NCT00623103",
+      "NCT00767091",
+      "NCT01340885",
+      "NCT00988117",
+      "NCT04226248",
+      "NCT02258152",
+      "NCT01856738",
+      "NCT02450786",
+      "NCT01014858"
+    ]
+  },
+  {
+    "query_id": "Q11",
+    "category": "symptoms",
+    "query": "Parkinson disease depression anxiety psychiatric non-motor antidepressant",
+    "relevant_nct_ids": [
+      "NCT00304161",
+      "NCT04932434",
+      "NCT01323699",
+      "NCT00086190",
+      "NCT03904654",
+      "NCT02552836",
+      "NCT01545414",
+      "NCT04469049",
+      "NCT00847431"
+    ]
+  },
+  {
+    "query_id": "Q12",
+    "category": "symptoms",
+    "query": "Parkinson disease dyskinesia levodopa-induced amantadine extended release",
+    "relevant_nct_ids": [
+      "NCT01397422",
+      "NCT02153632",
+      "NCT02153645",
+      "NCT02589340",
+      "NCT02274766",
+      "NCT01538329",
+      "NCT02202551",
+      "NCT02136914",
+      "NCT01338662",
+      "NCT05435729"
+    ]
+  },
+  {
+    "query_id": "Q13",
+    "category": "gait_freezing",
+    "query": "freezing of gait Parkinson disease visual auditory cueing wearable sensor",
+    "relevant_nct_ids": [
+      "NCT05854147",
+      "NCT07212205",
+      "NCT03978507",
+      "NCT05080413",
+      "NCT02317289",
+      "NCT04459559",
+      "NCT00727467",
+      "NCT05019469",
+      "NCT00322426",
+      "NCT05790759"
+    ]
+  },
+  {
+    "query_id": "Q14",
+    "category": "gait_freezing",
+    "query": "Parkinson disease postural instability gait disorder treadmill rehabilitation",
+    "relevant_nct_ids": [
+      "NCT05784025",
+      "NCT03546244",
+      "NCT02098707",
+      "NCT04117737",
+      "NCT03021408",
+      "NCT03815409",
+      "NCT06104072",
+      "NCT05198076",
+      "NCT05022147",
+      "NCT01427062"
+    ]
   }
 ]

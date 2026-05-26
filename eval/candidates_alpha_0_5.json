@@ -1,0 +1,1500 @@
+[
+  {
+    "query_id": "Q01",
+    "category": "treatment",
+    "query": "levodopa carbidopa motor fluctuations wearing off Parkinson disease",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT05766813",
+        "title": "Lenrispodun as Adjunctive Therapy in the Treatment of Patients With Motor Fluctuations Due to Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7648831562060954,
+        "url": "https://clinicaltrials.gov/study/NCT05766813"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01766258",
+        "title": "Efficacy and Safety Proof of Concept Study in Patients With Parkinson's Disease and End-of-dose Motor Fluctuations",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7329152775380718,
+        "url": "https://clinicaltrials.gov/study/NCT01766258"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT00219284",
+        "title": "Effects of Carbidopa/Levodopa/Entacapone on Motor Function and Quality of Life in Patients With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7246685861995017,
+        "url": "https://clinicaltrials.gov/study/NCT00219284"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT01484990",
+        "title": "A Pharmacokinetic Study of Levodopa and Carbidopa Intestinal Gel in Subjects With Advanced Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7032540316711346,
+        "url": "https://clinicaltrials.gov/study/NCT01484990"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05471609",
+        "title": "Sustained Release Oral Formulation for Treatment of Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "EARLY_PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.683732936294625,
+        "url": "https://clinicaltrials.gov/study/NCT05471609"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT00642356",
+        "title": "Carbidopa/Levodopa/Entacapone Versus Immediate Release (IR) Carbidopa/Levodopa on Non-motor Symptoms in Patients With Idiopathic Parkinson's Disease and Demonstrating Non-motor Symptoms of Wearing Off",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6696237477581806,
+        "url": "https://clinicaltrials.gov/study/NCT00642356"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00368108",
+        "title": "Efficacy, Safety, and Tolerability of E2007 in Levodopa Treated Parkinson's Disease Patients With Motor Fluctuations",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6645266875497462,
+        "url": "https://clinicaltrials.gov/study/NCT00368108"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT07229651",
+        "title": "Metformin in Parkinson Disease",
+        "overall_status": "RECRUITING",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6589932083263077,
+        "url": "https://clinicaltrials.gov/study/NCT07229651"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT03140956",
+        "title": "Pharmacokinetic of Levodopa Study in Healthy Males",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6539124824950441,
+        "url": "https://clinicaltrials.gov/study/NCT03140956"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT01296464",
+        "title": "Comparing Different Levodopa/Carbidopa/Entacapone Treatment Regimens",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.650738441768963,
+        "url": "https://clinicaltrials.gov/study/NCT01296464"
+      }
+    ]
+  },
+  {
+    "query_id": "Q02",
+    "category": "treatment",
+    "query": "dopamine agonist pramipexole ropinirole early Parkinson disease monotherapy",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT01007864",
+        "title": "Influence of Piribedil (Clarium®) on Vigilance and Cognitive Function in Patients With Parkinson's Disease Compared to Other Non-Ergot Dopamine Agonists",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8159583210945129,
+        "url": "https://clinicaltrials.gov/study/NCT01007864"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01723904",
+        "title": "A Phase 3b, Open-Label, Safety and Efficacy Study of Rotigotine as Add-On Therapy With Low Doses of Pramipexole or Ropinirole in Patients With Advanced Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7780213135247633,
+        "url": "https://clinicaltrials.gov/study/NCT01723904"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT00335166",
+        "title": "SLV 308 and Pramipexole for Treatment of Patients With Early Parkinson Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7720718355335829,
+        "url": "https://clinicaltrials.gov/study/NCT00335166"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00434304",
+        "title": "Clinical Evaluation of Ropinirole PR/XR Tablets in Monotherapy for Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7600009942437576,
+        "url": "https://clinicaltrials.gov/study/NCT00434304"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT00666653",
+        "title": "Effects of a Dopamine Agonist on Pharmacodynamics of Levodopa in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.758102743589365,
+        "url": "https://clinicaltrials.gov/study/NCT00666653"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT01485172",
+        "title": "A Fixed Dose, Dose Response Study for Ropinirole Prolonged Release in Patients With Early Stage Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7483626862250128,
+        "url": "https://clinicaltrials.gov/study/NCT01485172"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00144300",
+        "title": "Ophthalmologic Safety Study of Pramipexole Immediate Release (IR) Versus Ropinirole in Early Parkinson's Disease (PD) Patients",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7305025293171075,
+        "url": "https://clinicaltrials.gov/study/NCT00144300"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT00465452",
+        "title": "Impact of Switching to Continuous Release Dopamine Agonists",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7012421233224644,
+        "url": "https://clinicaltrials.gov/study/NCT00465452"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01049984",
+        "title": "Rasagiline as Add on to Dopamine Agonists in the Treatment of Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6893783357548675,
+        "url": "https://clinicaltrials.gov/study/NCT01049984"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT00321854",
+        "title": "Study of (Mirapex) Pramipexole for the Early Treatment of Parkinsons Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6848865960363583,
+        "url": "https://clinicaltrials.gov/study/NCT00321854"
+      }
+    ]
+  },
+  {
+    "query_id": "Q03",
+    "category": "treatment",
+    "query": "MAO-B inhibitor rasagiline selegiline neuroprotection Parkinson disease",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT01442610",
+        "title": "Effects of Rasagiline on Sleep Disturbances in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8409072756767273,
+        "url": "https://clinicaltrials.gov/study/NCT01442610"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01098396",
+        "title": "Rasagiline for Gait Treatment",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.835822624051936,
+        "url": "https://clinicaltrials.gov/study/NCT01098396"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT03843944",
+        "title": "Overnight Switch From Rasagiline To Safinamide",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8134821428729369,
+        "url": "https://clinicaltrials.gov/study/NCT03843944"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT02789020",
+        "title": "Image Parkinson's Disease Progression Study",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7289414934824318,
+        "url": "https://clinicaltrials.gov/study/NCT02789020"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT04870372",
+        "title": "Selegiline for the Treatment of Excessive Daytime Sleepiness in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7288525684128193,
+        "url": "https://clinicaltrials.gov/study/NCT04870372"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT01028586",
+        "title": "MOTION, Safinamide in Early Idiopathic Parkinson's Disease (IPD), as add-on to Dopamine Agonist (Extension of Trial 27918)",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6848070779170117,
+        "url": "https://clinicaltrials.gov/study/NCT01028586"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02278588",
+        "title": "Effect of 2.5 Years of Rasagiline Therapy on Progression of Cognitive Biomarkers Assessed by MRI in Parkinson's Disease.",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6782513845101634,
+        "url": "https://clinicaltrials.gov/study/NCT02278588"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT01382342",
+        "title": "The Effect of Rasagiline on Cognition in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6743012219277363,
+        "url": "https://clinicaltrials.gov/study/NCT01382342"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT05611372",
+        "title": "Efficacy and Safety of Rasagiline in Prodromal Parkinson's Disease",
+        "overall_status": "WITHDRAWN",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6671633296893708,
+        "url": "https://clinicaltrials.gov/study/NCT05611372"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT01178047",
+        "title": "Multicenter Placebo Controlled Study to Assess the Effect of Rasagiline on Sleep-wake Disturbances in Patients With Parkinson's Disease",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.664425268733575,
+        "url": "https://clinicaltrials.gov/study/NCT01178047"
+      }
+    ]
+  },
+  {
+    "query_id": "Q04",
+    "category": "treatment",
+    "query": "alpha-synuclein immunotherapy antibody Parkinson disease disease modification",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT03156647",
+        "title": "Alpha-synuclein Level in Saliva to Differentiate Between Idiopathic Parkinson Disease and Iatrogenic Parkinsonian Syndrome",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.8251016139984131,
+        "url": "https://clinicaltrials.gov/study/NCT03156647"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT06949670",
+        "title": "Alpha-Synuclein PET/CT in Various α-Syn-Related Disease",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7837324551508756,
+        "url": "https://clinicaltrials.gov/study/NCT06949670"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT06621602",
+        "title": "Quantification of Phosphorylated Alpha-synuclein in Cutaneous Biopsies as a Prospective Biomarker in Parkinson's Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7419470859074038,
+        "url": "https://clinicaltrials.gov/study/NCT06621602"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT07204652",
+        "title": "Colonoscopic Detection of Phosphorylated Alpha-synuclein for Parkinson's Diagnosis",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7291729008588802,
+        "url": "https://clinicaltrials.gov/study/NCT07204652"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05634876",
+        "title": "UB-312 in Patients With Synucleinopathies",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7189154760738409,
+        "url": "https://clinicaltrials.gov/study/NCT05634876"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT07217054",
+        "title": "Colonic Tissue Biopsy Detection of Phosphorylated Alpha-synuclein for Parkinson's Diagnosis or REM Sleep Behavior Disorder",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7150287815417027,
+        "url": "https://clinicaltrials.gov/study/NCT07217054"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02114242",
+        "title": "Biomarkers in Parkinsonian Syndromes",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6823732865402539,
+        "url": "https://clinicaltrials.gov/study/NCT02114242"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT01380899",
+        "title": "Usefulness of α-synuclein as a Marker for Early Diagnosis of Parkinson's Disease in Skin Biopsy.",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6729039449839338,
+        "url": "https://clinicaltrials.gov/study/NCT01380899"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT04020198",
+        "title": "A Pilot Biomarker Study Assessing Alpha-synuclein Aggregates Across Biofluid Reservoirs in Patients With Synucleinopathies",
+        "overall_status": "TERMINATED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6666009369322102,
+        "url": "https://clinicaltrials.gov/study/NCT04020198"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT04724941",
+        "title": "Prodromal Alpha-Synuclein Screening in Parkinson's Disease Study",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6656500816660127,
+        "url": "https://clinicaltrials.gov/study/NCT04724941"
+      }
+    ]
+  },
+  {
+    "query_id": "Q05",
+    "category": "device",
+    "query": "deep brain stimulation subthalamic nucleus globus pallidus Parkinson",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT02647372",
+        "title": "Deep Brain Stimulation for Parkinson's Disease: the Globus Pallidus Internus Versus Subthalamic Nucleus",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.9089683522544076,
+        "url": "https://clinicaltrials.gov/study/NCT02647372"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01076452",
+        "title": "Phase II Subthalamic Nucleus (STN) vs. Globus Pallidus (GPi) Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8795355260372162,
+        "url": "https://clinicaltrials.gov/study/NCT01076452"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07250685",
+        "title": "Subthalamic Nucleus Versus Globus Pallidal Internus Deep Brain Stimulation for Parkinson Disease",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8785628385191673,
+        "url": "https://clinicaltrials.gov/study/NCT07250685"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00053625",
+        "title": "Deep Brain Stimulation for Parkinson's Disease Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.823642689822615,
+        "url": "https://clinicaltrials.gov/study/NCT00053625"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT07410598",
+        "title": "Safety and Tolerability of Patterned Stimulation for DBS in the Home Setting",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7617600524361284,
+        "url": "https://clinicaltrials.gov/study/NCT07410598"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT05262348",
+        "title": "An Open-label Clinical Trial to Compare the Safety and Effectiveness of Adaptive Versus Conventional Deep Brain Stimulation",
+        "overall_status": "WITHDRAWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7433682603246901,
+        "url": "https://clinicaltrials.gov/study/NCT05262348"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT04725773",
+        "title": "Apraxia in Parkinson's Disease Patients With Deep Brain Stimulation",
+        "overall_status": "TERMINATED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7400402712412992,
+        "url": "https://clinicaltrials.gov/study/NCT04725773"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT00056563",
+        "title": "Phase I Deep Brain Stimulation (DBS) vs. Best Medical Therapy (BMT) Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7297006063934652,
+        "url": "https://clinicaltrials.gov/study/NCT00056563"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT02763397",
+        "title": "Deep Brain Stimulation (DBS) of the Nucleus Basalis of Meynert (NbM) in Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7281616406033333,
+        "url": "https://clinicaltrials.gov/study/NCT02763397"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02823158",
+        "title": "Bilateral Pallidal Stimulation in Patients With Advanced Parkinson's Disease-LATESTIM",
+        "overall_status": "TERMINATED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7184293811230025,
+        "url": "https://clinicaltrials.gov/study/NCT02823158"
+      }
+    ]
+  },
+  {
+    "query_id": "Q06",
+    "category": "device",
+    "query": "focused ultrasound thalamotomy tremor Parkinson disease non-invasive",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT02692183",
+        "title": "Mapping Functional Networks of Brain Activity Using EEG in Patients With Essential Tremor or Parkinson Disease Before and After MR-guided Focused Ultrasound Thalamotomy for Tremor",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.8490384817123413,
+        "url": "https://clinicaltrials.gov/study/NCT02692183"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT04002596",
+        "title": "Safety and Initial Effectiveness of Transcranial MR Guided Focused Ultrasound for the Treatment of Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8340102368457182,
+        "url": "https://clinicaltrials.gov/study/NCT04002596"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07284719",
+        "title": "MRgFUS for Parkinson's Tremor",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8314609458023653,
+        "url": "https://clinicaltrials.gov/study/NCT07284719"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT07044973",
+        "title": "VIM+PTT MRgFUS for PD",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.719335670121559,
+        "url": "https://clinicaltrials.gov/study/NCT07044973"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05624385",
+        "title": "MRgFUS Thalamotomy for Therapy-Resistant Tremor-related Disease With Low SDR Value",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.716797596533656,
+        "url": "https://clinicaltrials.gov/study/NCT05624385"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT05475340",
+        "title": "Open Label Study for the Use of Transcranial Ultrasound Treatment of Tremor",
+        "overall_status": "UNKNOWN",
+        "phase": "EARLY_PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6859610246313217,
+        "url": "https://clinicaltrials.gov/study/NCT05475340"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT07172295",
+        "title": "Modulate Tremor Severity With Low-intensity Focused Ultrasound Stimulation Targeting the Deep Nucleus of Patients With Refractory Hand Tremor.",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6857351411701529,
+        "url": "https://clinicaltrials.gov/study/NCT07172295"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT06799923",
+        "title": "Possibilities of Use MRI-Guided Laser Interstitial Thermal Therapy in Medically Intractable Tremor",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6659080570700981,
+        "url": "https://clinicaltrials.gov/study/NCT06799923"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01698450",
+        "title": "Magnetic Resonance (MR) Guided Functional Ultrasound-Neurosurgery for Movement Disorders",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6584201855568677,
+        "url": "https://clinicaltrials.gov/study/NCT01698450"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT06259708",
+        "title": "Using Low Intensity Focused Ultrasound to Modulate Deep Brain Areas for Tremor Control in Parkinson's Disease Patients.",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6581572259948778,
+        "url": "https://clinicaltrials.gov/study/NCT06259708"
+      }
+    ]
+  },
+  {
+    "query_id": "Q07",
+    "category": "device",
+    "query": "transcranial magnetic stimulation repetitive rTMS motor cortex Parkinson",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT03059212",
+        "title": "rTMS in Facilitation of Working Memory in PD",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.9127106368541718,
+        "url": "https://clinicaltrials.gov/study/NCT03059212"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT04638777",
+        "title": "Repetitive Transcranial Magnetic Stimulation With H-coil in Parkinson's Disease (rTMS-PD)",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8612106749626737,
+        "url": "https://clinicaltrials.gov/study/NCT04638777"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT04116216",
+        "title": "rTMS on Motor Function of Parkinson's Disease Patients With Different Phenotypes",
+        "overall_status": "UNKNOWN",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8575198768043516,
+        "url": "https://clinicaltrials.gov/study/NCT04116216"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00955032",
+        "title": "Repetitive Transcranial Magnetic Stimulation (rTMS) for the Treatment of Apathy in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8402481405028852,
+        "url": "https://clinicaltrials.gov/study/NCT00955032"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT06383247",
+        "title": "The Efficacy and Safety of Precision REpetitive Transcranial Magnetic Stimulation in Alleviating Motor Symptom in Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.837442706094849,
+        "url": "https://clinicaltrials.gov/study/NCT06383247"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT06583278",
+        "title": "The Efficacy of Repetitive Transcranial Magnetic Stimulation in Parkinson&#39;s Disease：A Randomized, Double-blind, Multicenter, Placebo-controlled Trial",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8339427644032684,
+        "url": "https://clinicaltrials.gov/study/NCT06583278"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT07195773",
+        "title": "Effects of rTMS on Balance Performance and Functional Mobility in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8331105059569874,
+        "url": "https://clinicaltrials.gov/study/NCT07195773"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02850159",
+        "title": "Effect of Simultaneous Dual Stimulation on Freezing of Gait in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.821800556262406,
+        "url": "https://clinicaltrials.gov/study/NCT02850159"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01080794",
+        "title": "rTMS for Motor and Mood Symptoms of Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8069029824077114,
+        "url": "https://clinicaltrials.gov/study/NCT01080794"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT07310238",
+        "title": "Dual-Task Improvement in Parkinson's Via rTMS",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8053780490348533,
+        "url": "https://clinicaltrials.gov/study/NCT07310238"
+      }
+    ]
+  },
+  {
+    "query_id": "Q08",
+    "category": "rehabilitation",
+    "query": "physiotherapy exercise balance training falls prevention Parkinson disease",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT04063605",
+        "title": "The Effect of Clinical Pilates Training on Balance and Postural Control of People With Parkinson's Disease.",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8884543180465698,
+        "url": "https://clinicaltrials.gov/study/NCT04063605"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT05940077",
+        "title": "Community Exercise for Fall Risk in PD",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8304457179578172,
+        "url": "https://clinicaltrials.gov/study/NCT05940077"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07399613",
+        "title": "Effects of Protective Step Training on Proactive and Reactive Motor Adaptations in Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7864062125326235,
+        "url": "https://clinicaltrials.gov/study/NCT07399613"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT07590700",
+        "title": "Home-Based Exercise Programs for Fall Prevention in Parkinson Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7745533880182904,
+        "url": "https://clinicaltrials.gov/study/NCT07590700"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02476266",
+        "title": "Two Resistance Training Protocols to Reduce the Risk of Falls in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7535548328005286,
+        "url": "https://clinicaltrials.gov/study/NCT02476266"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT07442370",
+        "title": "The Effect of Functional Rotational Exercises on Fall Risk and Mobility in Parkinson's Disease Patients",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7508410062307156,
+        "url": "https://clinicaltrials.gov/study/NCT07442370"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02488265",
+        "title": "Protocol: Balance Training in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7069254754208993,
+        "url": "https://clinicaltrials.gov/study/NCT02488265"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02302144",
+        "title": "A Multifactorial Exercise Program to Reduce Falls in People With Parkinson Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7029177476837112,
+        "url": "https://clinicaltrials.gov/study/NCT02302144"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00518648",
+        "title": "Reduction of Falls in the Elderly - Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6994364823683134,
+        "url": "https://clinicaltrials.gov/study/NCT00518648"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02230267",
+        "title": "High-intensity Exercise and Fall Prevention Boot Camp for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6889553525295921,
+        "url": "https://clinicaltrials.gov/study/NCT02230267"
+      }
+    ]
+  },
+  {
+    "query_id": "Q09",
+    "category": "rehabilitation",
+    "query": "speech language therapy voice dysarthria swallowing Parkinson disease",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT00123084",
+        "title": "Efficacy of Voice Treatment for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8955082893371582,
+        "url": "https://clinicaltrials.gov/study/NCT00123084"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT02506205",
+        "title": "The Effect of LSVT LOUD for Mandarin-speaking Individuals With Hypokinetic Dysarthria Due to Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8554658485274611,
+        "url": "https://clinicaltrials.gov/study/NCT02506205"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT06593860",
+        "title": "Dysarthria Management for Minor Groups",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8134883373152566,
+        "url": "https://clinicaltrials.gov/study/NCT06593860"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT06416553",
+        "title": "Effect of Speech Therapy in Combination With Non-invasive Brain Stimulation on Speech of Patients With Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7932705568373448,
+        "url": "https://clinicaltrials.gov/study/NCT06416553"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT04966689",
+        "title": "The Effect of Combined Speech and Music-therapy on the Speech Characteristics of People With Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7900505583100705,
+        "url": "https://clinicaltrials.gov/study/NCT04966689"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT02407067",
+        "title": "A Comparison of Voice Amplifiers and Personal Communication Systems in Individuals With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7521637683201741,
+        "url": "https://clinicaltrials.gov/study/NCT02407067"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02935842",
+        "title": "Evaluation of Intensive Language Therapy",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7402865908292792,
+        "url": "https://clinicaltrials.gov/study/NCT02935842"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02973698",
+        "title": "Benefit From the Chin Down Maneuver in the Swallowing Performance and Self-perception of Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7369885813132873,
+        "url": "https://clinicaltrials.gov/study/NCT02973698"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT03700684",
+        "title": "Voice Treatment for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7355239865201593,
+        "url": "https://clinicaltrials.gov/study/NCT03700684"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02265315",
+        "title": "Augmenting Treatment Effects of Voice Therapy in Parkinson Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7276059669609438,
+        "url": "https://clinicaltrials.gov/study/NCT02265315"
+      }
+    ]
+  },
+  {
+    "query_id": "Q10",
+    "category": "symptoms",
+    "query": "Parkinson disease dementia cognitive decline cholinesterase inhibitor rivastigmine",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT03840837",
+        "title": "Cholinergic Neurotransmission in Mobility and Cognition in Parkinson Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8561921119689941,
+        "url": "https://clinicaltrials.gov/study/NCT03840837"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT00623103",
+        "title": "Long-term Safety of Rivastigmine Capsule and Patch in Patients With Mild to Moderately-severe Dementia Associated With Parkinson's Disease (PDD)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7980286647947121,
+        "url": "https://clinicaltrials.gov/study/NCT00623103"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT00767091",
+        "title": "Study of Rivastigmine to Treat Parkinsonian Apathy Without Dementia",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7670436813585799,
+        "url": "https://clinicaltrials.gov/study/NCT00767091"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT01340885",
+        "title": "Cognitive Decline in Non-demented PD",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7345577798955661,
+        "url": "https://clinicaltrials.gov/study/NCT01340885"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT00988117",
+        "title": "The Effects of the Rivastigmine Patch on Parkinson's Disease With Memory and/or Thinking Problems",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7146825245899029,
+        "url": "https://clinicaltrials.gov/study/NCT00988117"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT04226248",
+        "title": "CHIEF-PD (CHolinesterase Inhibitor to prEvent Falls in Parkinson's Disease)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7081562642272394,
+        "url": "https://clinicaltrials.gov/study/NCT04226248"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02258152",
+        "title": "SYN120 Study to Evaluate Its Safety, Tolerability and Efficacy in Parkinson's Disease Dementia (SYNAPSE)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6847919578540322,
+        "url": "https://clinicaltrials.gov/study/NCT02258152"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT01856738",
+        "title": "Cholinesterase Inhibitors to Slow Progression of Visual Hallucinations in Parkinson&Apos;s Disease",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6832877090049423,
+        "url": "https://clinicaltrials.gov/study/NCT01856738"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT02450786",
+        "title": "Effect of Donepezil on Cognition in Parkinson's Disease With Mild Cognitive Impairment (PD-MCI)",
+        "overall_status": "UNKNOWN",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6438525599665842,
+        "url": "https://clinicaltrials.gov/study/NCT02450786"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT01014858",
+        "title": "Multi-centre UK Study of the Acetylcholinesterase Inhibitor Donepezil in Early Dementia Associated With Parkinson's Disease",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6381077375733992,
+        "url": "https://clinicaltrials.gov/study/NCT01014858"
+      }
+    ]
+  },
+  {
+    "query_id": "Q11",
+    "category": "symptoms",
+    "query": "Parkinson disease depression anxiety psychiatric non-motor antidepressant",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT00304161",
+        "title": "Effectiveness of Antidepressant Treatment for Depression in People With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8510193228721619,
+        "url": "https://clinicaltrials.gov/study/NCT00304161"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT04932434",
+        "title": "Psilocybin Therapy for Depression and Anxiety in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8441751378930318,
+        "url": "https://clinicaltrials.gov/study/NCT04932434"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT01323699",
+        "title": "Behavioral Treatments for Anxiety and Depression in Veterans With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1, PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8159746052286637,
+        "url": "https://clinicaltrials.gov/study/NCT01323699"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00086190",
+        "title": "Study of Antidepressants in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8083103658182689,
+        "url": "https://clinicaltrials.gov/study/NCT00086190"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT03904654",
+        "title": "Mindfulness-based Cognitive Therapy (MBCT) for People With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7509883227588827,
+        "url": "https://clinicaltrials.gov/study/NCT03904654"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT02552836",
+        "title": "Efficacy of Psychotherapy for Depressed Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7411938920460885,
+        "url": "https://clinicaltrials.gov/study/NCT02552836"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT01545414",
+        "title": "Internet-CBT (Cognitive Behavioral Therapy) for Depression and Anxiety in Parkinsons Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7390208191921449,
+        "url": "https://clinicaltrials.gov/study/NCT01545414"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT04469049",
+        "title": "MBCT for People With Parkinson's Disease and Caregivers",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7329091973885942,
+        "url": "https://clinicaltrials.gov/study/NCT04469049"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00847431",
+        "title": "Mapping Mood in the Subthalamic Nucleus in Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7007680309288195,
+        "url": "https://clinicaltrials.gov/study/NCT00847431"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05959161",
+        "title": "Study on Brain Network Mechanism of Deep Brain Stimulation for Parkinson's Disease",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6875557598621792,
+        "url": "https://clinicaltrials.gov/study/NCT05959161"
+      }
+    ]
+  },
+  {
+    "query_id": "Q12",
+    "category": "symptoms",
+    "query": "Parkinson disease dyskinesia levodopa-induced amantadine extended release",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT01397422",
+        "title": "Extended Release Amantadine Safety and Efficacy Study in Levodopa-Induced Dyskinesia (EASED Study)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.9039528369903564,
+        "url": "https://clinicaltrials.gov/study/NCT01397422"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT02153632",
+        "title": "Efficacy and Safety of Amantadine Hydrogen Chloride (HCl) ER Tablets in Parkinson's Disease Subjects With LID",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.810187494247609,
+        "url": "https://clinicaltrials.gov/study/NCT02153632"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT02153645",
+        "title": "Efficacy and Safety of Amantadine Hydrochloride (HCl) ER Tablets to Treat Parkinson's Disease Patients With LID.",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7679386399840262,
+        "url": "https://clinicaltrials.gov/study/NCT02153645"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT02589340",
+        "title": "Buspirone, in Combination With Amantadine, for the Treatment of Levodopa-induced Dyskinesia",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7481954934404373,
+        "url": "https://clinicaltrials.gov/study/NCT02589340"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02274766",
+        "title": "Efficacy and Safety Study of ADS-5102 in PD Patients With Levodopa-Induced Dyskinesia",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7462496123301088,
+        "url": "https://clinicaltrials.gov/study/NCT02274766"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT01538329",
+        "title": "Amantadine and L-DOPA-induced Dyskinesia in Early Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6817527762644826,
+        "url": "https://clinicaltrials.gov/study/NCT01538329"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02202551",
+        "title": "Open-Label Safety Study of ADS-5102 in PD Patients With LID",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6614548980018189,
+        "url": "https://clinicaltrials.gov/study/NCT02202551"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02136914",
+        "title": "ADS-5102 for the Treatment of Levodopa Induced Dyskinesia (EASE LID Study)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6499121304668792,
+        "url": "https://clinicaltrials.gov/study/NCT02136914"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01338662",
+        "title": "Comparison of the Incidence of Dyskinesia in Parkinson's Disease Who Were Treated With Amantadine or Dopamine Agonist",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6434600821796452,
+        "url": "https://clinicaltrials.gov/study/NCT01338662"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05435729",
+        "title": "A Pharmacodynamics and Safety Study of DSP-9632P in Patients With Levodopa-Induced Dyskinesia in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.64270481058937,
+        "url": "https://clinicaltrials.gov/study/NCT05435729"
+      }
+    ]
+  },
+  {
+    "query_id": "Q13",
+    "category": "gait_freezing",
+    "query": "freezing of gait Parkinson disease visual auditory cueing wearable sensor",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT05854147",
+        "title": "Comparison of Effects of TT With and Without Visual and Auditory Cues for Freezing & Gait Patients With PD",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8829487562179565,
+        "url": "https://clinicaltrials.gov/study/NCT05854147"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT07212205",
+        "title": "Freezing in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.838349366517657,
+        "url": "https://clinicaltrials.gov/study/NCT07212205"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT03978507",
+        "title": "Digital Wearable Walking Aid for Freezing of Gait in Parkinson´s Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.83477071363302,
+        "url": "https://clinicaltrials.gov/study/NCT03978507"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT05080413",
+        "title": "Comparison of Sensory Cuing Modalities for Freezing of Gait",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8330171049362629,
+        "url": "https://clinicaltrials.gov/study/NCT05080413"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02317289",
+        "title": "Assisted Device for Freezing in Parkinson Disease",
+        "overall_status": "TERMINATED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8238450482311941,
+        "url": "https://clinicaltrials.gov/study/NCT02317289"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT04459559",
+        "title": "Usability of a Novel Cueing Device for Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8007573913694959,
+        "url": "https://clinicaltrials.gov/study/NCT04459559"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00727467",
+        "title": "A Randomised Controlled Trial (RCT) to Evaluate Use of an Individual Auditory Cueing Device's (IACD's) on Freezing and Gait in People With Parkinson's Disease (PD)",
+        "overall_status": "UNKNOWN",
+        "phase": "PHASE1, PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8005710054519122,
+        "url": "https://clinicaltrials.gov/study/NCT00727467"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT05019469",
+        "title": "Overcoming Gait Freeze in Parkinson's Disease Using Responsive Cueing",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7965866937901992,
+        "url": "https://clinicaltrials.gov/study/NCT05019469"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00322426",
+        "title": "Sensory Cues for Freezing in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7958080491837439,
+        "url": "https://clinicaltrials.gov/study/NCT00322426"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05790759",
+        "title": "Effect of Haptic Cueing on Long-Range Autocorrelations in Parkinson's Disease Gait Variability",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7509116312912189,
+        "url": "https://clinicaltrials.gov/study/NCT05790759"
+      }
+    ]
+  },
+  {
+    "query_id": "Q14",
+    "category": "gait_freezing",
+    "query": "Parkinson disease postural instability gait disorder treadmill rehabilitation",
+    "candidates": [
+      {
+        "rank": 1,
+        "nct_id": "NCT05784025",
+        "title": "Gait Training With antiGRAVIty TREadmill 'Alter-G', in Patients With ParkinSON Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7921770302819058,
+        "url": "https://clinicaltrials.gov/study/NCT05784025"
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT03546244",
+        "title": "Evaluation of Efficacy of Musical Treadmill in PD Rehabilitation",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7782220217854166,
+        "url": "https://clinicaltrials.gov/study/NCT03546244"
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT02098707",
+        "title": "Effects of a Rehabilitation Treatment on Balance in PD Evaluated With a Stabilometric Platform",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7661071744438326,
+        "url": "https://clinicaltrials.gov/study/NCT02098707"
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT04117737",
+        "title": "A Pilot Study of Virtual Reality and Antigravity Treadmill for Gait Improvement in Parkinson",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7619123099460805,
+        "url": "https://clinicaltrials.gov/study/NCT04117737"
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT03021408",
+        "title": "Effectiveness of Different Approaches for the Rehabilitation of Gait in Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7557557006946518,
+        "url": "https://clinicaltrials.gov/study/NCT03021408"
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT03815409",
+        "title": "Treadmill in the Rehabilitation of Parkinsonian Gait",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7405635629861262,
+        "url": "https://clinicaltrials.gov/study/NCT03815409"
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT06104072",
+        "title": "Effect of Adding Computerized Cognitive Training on Balance, Locomotion and Cognition in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7378272712379803,
+        "url": "https://clinicaltrials.gov/study/NCT06104072"
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT05198076",
+        "title": "6 Month Follow up Study on the Changes of Postural Stability in Parkinsonian Patients in Response to High Frequency TMS.",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7370250390085347,
+        "url": "https://clinicaltrials.gov/study/NCT05198076"
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT05022147",
+        "title": "Enhancing Gait Using Alternating-Frequency DBS in Parkinson Disease",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7309189509184528,
+        "url": "https://clinicaltrials.gov/study/NCT05022147"
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT01427062",
+        "title": "Effects of an Innovative Balance Training Programme in Enhancing Postural Control and Reducing Falls in Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7220207046141571,
+        "url": "https://clinicaltrials.gov/study/NCT01427062"
+      }
+    ]
+  }
+]
