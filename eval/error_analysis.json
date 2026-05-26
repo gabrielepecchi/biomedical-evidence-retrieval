@@ -1,0 +1,122 @@
+[
+  {
+    "query_id": "Q04",
+    "category": "treatment",
+    "failure_mode": "synonym_mismatch",
+    "method": "bm25_only",
+    "description": "The query uses 'alpha-synuclein immunotherapy antibody disease modification'. BM25 matched trials containing 'alpha-synuclein' as a biomarker or imaging target (relevance 1) ahead of the single immunotherapy trial (NCT05634876, relevance 2), because the term 'immunotherapy' does not appear consistently in trial titles and brief summaries. The word overlap on 'alpha-synuclein' dominated ranking without capturing the therapeutic intent.",
+    "possible_fix": "Expanding the BM25 document field to include intervention descriptions and MeSH-style terms would help surface the immunotherapy context. Hybrid scoring already compensates by using semantic similarity to detect the vaccine/antibody intent."
+  },
+  {
+    "query_id": "Q04",
+    "category": "treatment",
+    "failure_mode": "biomarker_vs_treatment_confusion",
+    "method": "bm25_only",
+    "description": "Several trials about alpha-synuclein as a diagnostic biomarker (NCT03156647, NCT06949670, NCT06621602) ranked highly due to lexical overlap on 'alpha-synuclein', despite being observational biomarker studies rather than immunotherapy interventions. BM25 cannot distinguish the therapeutic vs. diagnostic usage of the same protein name.",
+    "possible_fix": "Adding a field indicating intervention type (e.g., Interventional vs. Observational) or intervention class to the indexed text would reduce false positives from biomarker studies."
+  },
+  {
+    "query_id": "Q17",
+    "category": "treatment",
+    "failure_mode": "synonym_mismatch",
+    "method": "semantic_only",
+    "description": "The query targets istradefylline, an adenosine A2A receptor antagonist. Semantic retrieval with a general-purpose sentence encoder drifted toward trials mentioning 'adenosine' or 'antagonist' in non-PD contexts and missed some directly relevant istradefylline trials. The drug name 'istradefylline' is rare enough in general training corpora that the model encodes it weakly relative to more frequent pharmacological terms.",
+    "possible_fix": "A domain-adapted biomedical embedding model trained on clinical trial text may encode rare drug names more reliably. Alternatively, adding the drug name explicitly to the BM25 index as a boosted field would compensate via the hybrid score."
+  },
+  {
+    "query_id": "Q19",
+    "category": "treatment",
+    "failure_mode": "semantic_drift",
+    "method": "semantic_only",
+    "description": "The query asks for GLP-1 receptor agonists (liraglutide, exenatide) as neuroprotective agents in Parkinson disease. Semantic-only retrieval sometimes surfaced metabolic/diabetes trials sharing GLP-1 terminology rather than PD-specific neuroprotection trials. The general embedding model conflated the metabolic and neurological contexts of GLP-1 agonists.",
+    "possible_fix": "Including the disease context ('Parkinson disease') as a stronger anchor in the retrieval query, or filtering to PD-condition trials before re-ranking, would reduce drift into non-PD metabolic studies."
+  },
+  {
+    "query_id": "Q22",
+    "category": "advanced_therapy",
+    "failure_mode": "synonym_mismatch",
+    "method": "bm25_only",
+    "description": "The query includes 'AAV GDNF neurturin'. BM25 strongly matched trials mentioning 'GDNF' explicitly but ranked the AAV chemogenetic trial (NCT07533591) and GBA1 gene therapy trials ahead of some high-relevance GDNF infusion trials, because those records use 'AAV' or 'gene therapy' without consistently co-occurring with 'GDNF' or 'neurturin' in the indexed text.",
+    "possible_fix": "Indexing the full protocol description rather than just the brief summary would capture more complete co-occurrence of the vector type and therapeutic target. Hybrid scoring corrected this by using semantic proximity of 'gene therapy neuroprotection' concepts."
+  },
+  {
+    "query_id": "Q06",
+    "category": "device",
+    "failure_mode": "lexical_overmatch",
+    "method": "bm25_only",
+    "description": "The query targets focused ultrasound thalamotomy for tremor. BM25 occasionally ranked generic tremor trials or thalamic stimulation trials (DBS) highly because both 'thalamo' and 'tremor' appear as isolated tokens in those records, even when the treatment modality was electrical rather than ultrasound-based. BM25 does not distinguish ultrasound from electrical thalamic intervention at the token level.",
+    "possible_fix": "Adding phrase-level matching or bigram indexing (e.g., 'focused ultrasound') would reduce false matches from trials that mention the anatomical target but use a different intervention modality."
+  },
+  {
+    "query_id": "Q13",
+    "category": "gait_freezing",
+    "failure_mode": "field_specificity_gap",
+    "method": "semantic_only",
+    "description": "The query asks for visual/auditory cueing and wearable sensors for freezing of gait. Several directly relevant trials (e.g., NCT05854147, NCT03978507) describe their cues as 'rhythmic auditory stimulation' or 'laser cue' in the full protocol but use briefer language in the indexed search text. Semantic similarity on short text fragments did not consistently rank these above generic gait studies.",
+    "possible_fix": "Indexing a richer text field combining the brief summary with the primary outcome description would give the semantic retriever more signal about the specific cueing modality."
+  },
+  {
+    "query_id": "Q03",
+    "category": "treatment",
+    "failure_mode": "synonym_mismatch",
+    "method": "bm25_only",
+    "description": "The query targets MAO-B inhibitors for neuroprotection. Rasagiline trials focused on sleep (NCT01442610) or gait (NCT01098396) ranked comparably to the neuroprotection-focused trials because 'rasagiline' appears in all of them. BM25 cannot distinguish the therapeutic intent (neuroprotection vs. symptom management) when the drug name dominates the score.",
+    "possible_fix": "Including the primary outcome measure or study objective in the indexed text would let BM25 differentiate between neuroprotection-focused and symptomatic-management trials using the same drug."
+  },
+  {
+    "query_id": "Q11",
+    "category": "symptoms",
+    "failure_mode": "nonmotor_symptom_ambiguity",
+    "method": "semantic_only",
+    "description": "The query combines depression, anxiety, and antidepressants as non-motor PD symptoms. Semantic retrieval drifted toward general psychiatric trials and PD-adjacent mood disorder studies that did not focus on Parkinson disease, because 'depression anxiety antidepressant' is a very common semantic cluster in clinical trial corpora outside the PD context. PD-specific framing was underweighted.",
+    "possible_fix": "Concatenating the disease name ('Parkinson disease') more prominently in the embedding input, or applying a post-retrieval PD-condition filter, would reduce non-PD psychiatric trial intrusion."
+  },
+  {
+    "query_id": "Q44",
+    "category": "cognitive_nonmotor",
+    "failure_mode": "nonmotor_symptom_ambiguity",
+    "method": "bm25_only",
+    "description": "The query targets mild cognitive impairment (MCI) conversion risk and intervention in Parkinson disease. BM25 returned the community MCI screening and stem cell trial (NCT07214974, relevance 1) ahead of some high-relevance PD-MCI intervention trials because 'mild cognitive impairment' and 'intervention' appear verbatim in that record. Without disease context weighting, BM25 cannot distinguish PD-MCI from general MCI.",
+    "possible_fix": "Requiring 'Parkinson' to appear in the trial condition field, or weighting the condition field more heavily in the BM25 index, would reduce matches from non-PD MCI trials."
+  },
+  {
+    "query_id": "Q09",
+    "category": "rehabilitation",
+    "failure_mode": "semantic_drift",
+    "method": "semantic_only",
+    "description": "The query covers speech/language therapy, voice, dysarthria, and swallowing. The semantic model occasionally ranked non-PD voice or swallowing rehabilitation trials higher than some relevant PD-specific ones, because the embedding space for 'dysarthria swallowing voice therapy' is shared across neurological conditions (stroke, ALS, PD) and the model did not consistently anchor to Parkinson disease.",
+    "possible_fix": "A bi-encoder fine-tuned on clinical trial retrieval would better capture disease-specific context. In the short term, the hybrid score substantially corrects this by using BM25's exact 'Parkinson' token match."
+  },
+  {
+    "query_id": "Q43",
+    "category": "diagnosis",
+    "failure_mode": "field_specificity_gap",
+    "method": "bm25_only",
+    "description": "The query asks for wearable accelerometers and digital biomarkers for bradykinesia and tremor monitoring. Several directly relevant trials use terms such as 'sensor-based', 'smartphone', or 'inertial measurement unit' rather than 'accelerometer' in their indexed search text. BM25 missed these trials due to vocabulary mismatch, while semantic retrieval correctly identified them as conceptually aligned with wearable monitoring.",
+    "possible_fix": "Expanding the index with controlled vocabulary synonyms for wearable sensor technologies would improve BM25 recall on this category. This is a case where hybrid scoring provided clear benefit."
+  },
+  {
+    "query_id": "Q46",
+    "category": "cognitive_nonmotor",
+    "failure_mode": "intervention_mismatch",
+    "method": "semantic_only",
+    "description": "The query targets impulse control disorder (ICD) caused by dopamine agonists, including gambling and hypersexuality. Semantic-only retrieval surfaced general impulsivity and decision-making trials (NCT03342339) that do not study dopamine-agonist-induced ICD, because 'impulsivity decision-making Parkinson' is semantically close to ICD without being a match. The specific causal mechanism (dopamine agonist) was not captured by the general embedding.",
+    "possible_fix": "The hybrid model scored the high-relevance ICD trials correctly by combining BM25's exact match on 'impulse control' and 'dopamine agonist' with semantic context. A domain-adapted model might reduce this drift in semantic-only mode."
+  },
+  {
+    "query_id": "Q20",
+    "category": "advanced_therapy",
+    "failure_mode": "lexical_overmatch",
+    "method": "bm25_only",
+    "description": "The query for levodopa-carbidopa intestinal gel (LCIG/Duodopa) infusion matched several opicapone-adjunct and general levodopa formulation trials at comparable scores to the direct LCIG matches, because tokens such as 'levodopa', 'carbidopa', and 'infusion' appear in a variety of trial types. BM25 ranked NCT06432309 (opicapone adjunct to LCIG) and NCT02448914 (alternative gel formulation) similarly to core LCIG efficacy studies.",
+    "possible_fix": "Bigram or phrase indexing for 'intestinal gel' and 'continuous infusion' would let BM25 distinguish device-based delivery trials from standard oral or patch formulations. Hybrid scoring added semantic context to improve separation."
+  },
+  {
+    "query_id": "Q08",
+    "category": "rehabilitation",
+    "failure_mode": "candidate_pool_bias",
+    "method": "semantic_only",
+    "description": "Recall@10 for semantic-only on balance and falls prevention queries was lower than hybrid. Several relevant trials (NCT02476266, NCT02302144) were outside the top-10 for semantic-only because the embedding space for 'exercise balance falls prevention' is dense with rehabilitation trials, and the model distributed scores broadly rather than concentrating them on the most specific PD fall-prevention studies. This reflects a candidate pool bias: many plausible candidates compressed the score range.",
+    "possible_fix": "Expanding the semantic candidate pool beyond top-10 before re-ranking, or using a cross-encoder reranker on a larger candidate set, could improve recall in dense retrieval regions. Hybrid scoring concentrated mass on the most relevant trials by adding BM25 specificity."
+  }
+]
