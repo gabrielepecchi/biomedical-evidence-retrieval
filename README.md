@@ -105,6 +105,17 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V3.2 — Trial Matching Lite
+
+- **Added `eval/patient_cases.json`** with 12 synthetic Parkinson disease patient cases covering diverse clinical scenarios: freezing of gait, motor fluctuations, dyskinesia, DBS consideration, focused ultrasound tremor, rehabilitation and falls, speech and swallowing, cognitive impairment, depression and anxiety, autonomic dysfunction, advanced therapy infusion, and wearable monitoring.
+- **Added `eval/trial_matching_lite.py`** — a script that reads `patient_cases.json`, calls the existing `/search` API using each case's `matching_query` at alpha=0.5 with top_n=10, and writes ranked results to `eval/patient_case_matches_alpha_0_5.json`.
+- **Added `eval/patient_case_matches_alpha_0_5.json`** — the output of Trial Matching Lite over all 12 synthetic cases.
+- **Compatibility labels are rank-based only:** ranks 1–3 are labelled `likely_relevant`; ranks 4–10 are labelled `possibly_relevant`. These labels reflect retrieval rank and score only.
+- **This is retrieval-based trial matching only.** It does not perform clinical eligibility reasoning and does not claim that a patient is eligible or suitable for any trial. No medical decision support is implied.
+- **Tests expanded** to include Trial Matching Lite schema validation covering both input and output file structure, rank-to-label mapping, and compatibility reason content.
+
+---
+
 ## Project Structure
 
 ```
@@ -140,14 +151,18 @@ biomedical-evidence-retrieval/
 │   ├── compare_retrievers.py  # Retriever comparison script (V2.3)
 │   ├── compare_reranker.py    # Reranker experiment script (V2.4)
 │   ├── collect_unlabeled_candidates.py  # Candidate collection for labeling
-│   └── unlabeled_candidates_alpha_0_5.json  # Unlabeled top-10 candidates
+│   ├── unlabeled_candidates_alpha_0_5.json  # Unlabeled top-10 candidates
+│   ├── patient_cases.json           # Synthetic patient cases for Trial Matching Lite (V3.2)
+│   ├── trial_matching_lite.py       # Trial Matching Lite retrieval script (V3.2)
+│   └── patient_case_matches_alpha_0_5.json  # Trial Matching Lite output (V3.2)
 ├── tests/
 │   ├── test_bm25_retriever.py
 │   ├── test_semantic_retriever.py
 │   ├── test_hybrid_scorer.py
 │   ├── test_template_summary.py
 │   ├── test_api_routes.py
-│   └── test_main.py
+│   ├── test_main.py
+│   └── test_trial_matching_lite.py
 ├── requirements.txt
 └── README.md
 ```
@@ -259,6 +274,12 @@ Metrics reported per query:
 - **nDCG@10** — normalised discounted cumulative gain at 10, using graded relevance values 0/1/2
 
 > The API must be running before you run the evaluation script.
+
+The test suite covers retrieval, scoring, summaries, API routes, and Trial Matching Lite schema validation. Run all tests with:
+
+```bash
+pytest
+```
 
 ---
 
