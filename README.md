@@ -116,6 +116,16 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V3.3 — Retrieval Error Analysis
+
+- **Added `eval/error_analysis.json`** with 15 representative qualitative error-analysis entries covering cases where BM25-only or semantic-only retrieval underperformed compared with hybrid retrieval at alpha=0.5.
+- **Added `eval/summarize_error_analysis.py`** — a script that reads `error_analysis.json` and prints counts by failure mode, method, category, and the list of query IDs covered.
+- **Added `tests/test_error_analysis.py`** — pytest tests that validate the structure and content of `error_analysis.json`.
+- **Common failure modes identified:** `synonym_mismatch`, `semantic_drift`, `lexical_overmatch`, `biomarker_vs_treatment_confusion`, `nonmotor_symptom_ambiguity`, `field_specificity_gap`, and `candidate_pool_bias`.
+- **This is qualitative retrieval error analysis only.** It does not constitute clinical validation and all observations are specific to this candidate-based benchmark corpus.
+
+---
+
 ## Project Structure
 
 ```
@@ -154,7 +164,9 @@ biomedical-evidence-retrieval/
 │   ├── unlabeled_candidates_alpha_0_5.json  # Unlabeled top-10 candidates
 │   ├── patient_cases.json           # Synthetic patient cases for Trial Matching Lite (V3.2)
 │   ├── trial_matching_lite.py       # Trial Matching Lite retrieval script (V3.2)
-│   └── patient_case_matches_alpha_0_5.json  # Trial Matching Lite output (V3.2)
+│   ├── patient_case_matches_alpha_0_5.json  # Trial Matching Lite output (V3.2)
+│   ├── error_analysis.json          # Qualitative retrieval error-analysis entries (V3.3)
+│   └── summarize_error_analysis.py  # Error analysis summary script (V3.3)
 ├── tests/
 │   ├── test_bm25_retriever.py
 │   ├── test_semantic_retriever.py
@@ -162,7 +174,8 @@ biomedical-evidence-retrieval/
 │   ├── test_template_summary.py
 │   ├── test_api_routes.py
 │   ├── test_main.py
-│   └── test_trial_matching_lite.py
+│   ├── test_trial_matching_lite.py
+│   └── test_error_analysis.py
 ├── requirements.txt
 └── README.md
 ```
@@ -275,7 +288,7 @@ Metrics reported per query:
 
 > The API must be running before you run the evaluation script.
 
-The test suite covers retrieval, scoring, summaries, API routes, and Trial Matching Lite schema validation. Run all tests with:
+The test suite covers retrieval, scoring, summaries, API routes, graded benchmark and error analysis schema validation, and Trial Matching Lite schema validation. Run all tests with:
 
 ```bash
 pytest
