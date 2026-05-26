@@ -70,6 +70,23 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V2.4 — Optional Reranker Experiment
+
+- **Added `eval/compare_reranker.py`** — a standalone script that retrieves the top 50 hybrid candidates per query and reranks them using a CrossEncoder model before evaluating metrics.
+- **Reranker model:** `cross-encoder/ms-marco-MiniLM-L-6-v2`.
+- **Reranking scope:** only the top 50 results from the hybrid standard pipeline are passed to the reranker; retrieval itself is unchanged.
+- **API, UI, and existing retrievers are unchanged.**
+- **Reranking did not improve metrics** on this candidate-based benchmark. Scores dropped across all four metrics compared to hybrid standard, so the reranker is not enabled as a default feature.
+
+### Benchmark Results
+
+| Method | Precision@5 | Hit@5 | Recall@10 | MRR |
+|---|---:|---:|---:|---:|
+| Hybrid standard | 0.886 | 1.000 | 1.000 | 0.907 |
+| Hybrid + reranker | 0.586 | 0.857 | 0.505 | 0.760 |
+
+---
+
 ## Project Structure
 
 ```
@@ -102,7 +119,8 @@ biomedical-evidence-retrieval/
 │   ├── queries.json           # Curated evaluation queries
 │   ├── candidates_alpha_0_5.json  # Top-10 candidates used for relevance labelling
 │   ├── evaluate.py            # Evaluation script
-│   └── compare_retrievers.py  # Retriever comparison script (V2.3)
+│   ├── compare_retrievers.py  # Retriever comparison script (V2.3)
+│   └── compare_reranker.py    # Reranker experiment script (V2.4)
 ├── tests/
 │   ├── test_bm25_retriever.py
 │   ├── test_semantic_retriever.py
