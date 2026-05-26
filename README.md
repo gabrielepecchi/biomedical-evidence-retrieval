@@ -112,6 +112,22 @@ python -m streamlit run ui/streamlit_app.py
 
 ---
 
+## Screenshots
+
+![Streamlit search interface](assets/screenshots/search-home.png)
+*Streamlit search interface*
+
+![Search results with hybrid scores](assets/screenshots/search-results.png)
+*Search results with hybrid scores*
+
+![Grounded summary view](assets/screenshots/grounded-summary.png)
+*Grounded summary view*
+
+![FastAPI interactive API docs](assets/screenshots/api-docs.png)
+*FastAPI interactive API docs*
+
+---
+
 ## Example Queries
 
 These queries work well against the Parkinson disease trial dataset:
