@@ -1,132 +1,119 @@
-"""Evaluation script for the Biomedical Evidence Retrieval and Trial Matching Platform.
-
-Reads queries from queries.json, calls the local /search API for each,
-and reports Precision@5, Hit@5, Recall@10, and MRR per query plus averages.
-Queries with empty relevant_nct_ids are printed as SKIPPED and excluded from averages.
+"""
+Usage: python -m eval.evaluate --alpha 0.5
 """
 
 import argparse
 import json
+import math
 import sys
+import urllib.request
+import urllib.parse
 
-import requests
-
-BASE_URL = "http://localhost:8000"
-TOP_N = 10
 QUERIES_FILE = "eval/queries.json"
+BASE_URL = "http://localhost:8000"
 
 
-def load_queries(path: str) -> list[dict]:
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+def search(query: str, alpha: float, top_n: int = 10) -> list[str]:
+    params = urllib.parse.urlencode({"q": query, "alpha": alpha, "top_n": top_n})
+    url = f"{BASE_URL}/search?{params}"
+    with urllib.request.urlopen(url) as resp:
+        data = json.loads(resp.read())
+    if isinstance(data, dict):
+        data = data.get("results", [])
+    return [r["nct_id"] if isinstance(r, dict) else r for r in data]
 
 
-def search(query: str, alpha: float, top_n: int) -> list[str]:
-    response = requests.get(
-        f"{BASE_URL}/search",
-        params={"q": query, "top_n": top_n, "alpha": alpha},
-        timeout=15,
-    )
-    response.raise_for_status()
-    return [r["nct_id"] for r in response.json().get("results", [])]
+def precision_at_k(results: list[str], judgments: dict, k: int = 5) -> float:
+    hits = sum(1 for nct in results[:k] if judgments.get(nct, 0) >= 1)
+    return hits / k
 
 
-def precision_at_k(retrieved: list[str], relevant: list[str], k: int) -> float:
-    top_k = retrieved[:k]
-    if not top_k:
+def hit_at_k(results: list[str], judgments: dict, k: int = 5) -> float:
+    return 1.0 if any(judgments.get(nct, 0) >= 1 for nct in results[:k]) else 0.0
+
+
+def recall_at_k(results: list[str], judgments: dict, k: int = 10) -> float:
+    relevant = sum(1 for v in judgments.values() if v >= 1)
+    if relevant == 0:
         return 0.0
-    return sum(1 for nct_id in top_k if nct_id in relevant) / k
+    found = sum(1 for nct in results[:k] if judgments.get(nct, 0) >= 1)
+    return found / relevant
 
 
-def hit_at_k(retrieved: list[str], relevant: list[str], k: int) -> float:
-    return 1.0 if any(nct_id in relevant for nct_id in retrieved[:k]) else 0.0
-
-
-def recall_at_k(retrieved: list[str], relevant: list[str], k: int) -> float:
-    if not relevant:
-        return 0.0
-    top_k = retrieved[:k]
-    return sum(1 for nct_id in top_k if nct_id in relevant) / len(relevant)
-
-
-def reciprocal_rank(retrieved: list[str], relevant: list[str]) -> float:
-    for i, nct_id in enumerate(retrieved, start=1):
-        if nct_id in relevant:
+def mrr(results: list[str], judgments: dict) -> float:
+    for i, nct in enumerate(results, 1):
+        if judgments.get(nct, 0) >= 1:
             return 1.0 / i
     return 0.0
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Evaluate retrieval quality.")
-    parser.add_argument(
-        "--alpha",
-        type=float,
-        default=0.5,
-        help="BM25 weight for hybrid scoring (0.0 to 1.0, default 0.5)",
+def ndcg_at_k(results: list[str], judgments: dict, k: int = 10) -> float:
+    ideal = sorted(judgments.values(), reverse=True)[:k]
+    ideal_dcg = sum(rel / math.log2(i + 2) for i, rel in enumerate(ideal))
+    if ideal_dcg == 0:
+        return 0.0
+    actual_dcg = sum(
+        judgments.get(nct, 0) / math.log2(i + 2)
+        for i, nct in enumerate(results[:k])
     )
-    args = parser.parse_args()
+    return actual_dcg / ideal_dcg
 
-    queries = load_queries(QUERIES_FILE)
 
-    try:
-        requests.get(f"{BASE_URL}/health", timeout=5).raise_for_status()
-    except requests.exceptions.ConnectionError:
-        print(f"Error: could not connect to the API at {BASE_URL}. Make sure it is running.")
-        sys.exit(1)
-    except requests.exceptions.HTTPError as exc:
-        print(f"Error: API returned an unexpected response: {exc}")
-        sys.exit(1)
+def evaluate(alpha: float) -> None:
+    with open(QUERIES_FILE) as f:
+        queries = json.load(f)
 
-    print(f"\nEvaluating with alpha={args.alpha}, top_n={TOP_N}\n")
+    metrics = ["P@5", "Hit@5", "R@10", "MRR", "nDCG@10"]
+    col_w = 10
+    q_w = 40
 
-    header = f"{'Query ID':<10} {'P@5':>6} {'Hit@5':>6} {'R@10':>6} {'MRR':>6}  Query"
+    header = f"{'Query':<{q_w}}" + "".join(f"{m:>{col_w}}" for m in metrics)
     print(header)
-    print("-" * 80)
+    print("-" * len(header))
 
-    p5_scores: list[float] = []
-    h5_scores: list[float] = []
-    r10_scores: list[float] = []
-    mrr_scores: list[float] = []
+    totals = {m: 0.0 for m in metrics}
+    count = 0
 
-    for item in queries:
-        query_id = item["query_id"]
-        query = item["query"]
-        relevant = item["relevant_nct_ids"]
-        short_query = query[:48] + "..." if len(query) > 48 else query
-
-        if not relevant:
-            print(f"{query_id:<10} {'SKIPPED':>6} {'':>6} {'':>6} {'':>6}  {short_query}")
+    for entry in queries:
+        raw = entry.get("judgments", [])
+        if not raw:
             continue
+
+        judgments = {j["nct_id"]: j["relevance"] for j in raw}
+        query = entry["query"]
 
         try:
-            retrieved = search(query, alpha=args.alpha, top_n=TOP_N)
-        except requests.exceptions.RequestException as exc:
-            print(f"{query_id:<10} Error calling /search: {exc}")
+            results = search(query, alpha)
+        except Exception as e:
+            print(f"WARN: search failed for '{query}': {e}", file=sys.stderr)
             continue
 
-        p5  = precision_at_k(retrieved, relevant, 5)
-        h5  = hit_at_k(retrieved, relevant, 5)
-        r10 = recall_at_k(retrieved, relevant, 10)
-        mrr = reciprocal_rank(retrieved, relevant)
+        row = {
+            "P@5":     precision_at_k(results, judgments),
+            "Hit@5":   hit_at_k(results, judgments),
+            "R@10":    recall_at_k(results, judgments),
+            "MRR":     mrr(results, judgments),
+            "nDCG@10": ndcg_at_k(results, judgments),
+        }
 
-        p5_scores.append(p5)
-        h5_scores.append(h5)
-        r10_scores.append(r10)
-        mrr_scores.append(mrr)
+        label = query[:q_w]
+        print(f"{label:<{q_w}}" + "".join(f"{row[m]:>{col_w}.4f}" for m in metrics))
 
-        print(f"{query_id:<10} {p5:>6.3f} {h5:>6.1f} {r10:>6.3f} {mrr:>6.3f}  {short_query}")
+        for m in metrics:
+            totals[m] += row[m]
+        count += 1
 
-    if p5_scores:
-        avg_p5  = sum(p5_scores)  / len(p5_scores)
-        avg_h5  = sum(h5_scores)  / len(h5_scores)
-        avg_r10 = sum(r10_scores) / len(r10_scores)
-        avg_mrr = sum(mrr_scores) / len(mrr_scores)
-        n = len(p5_scores)
-        print("-" * 80)
-        print(f"{'AVERAGE':<10} {avg_p5:>6.3f} {avg_h5:>6.3f} {avg_r10:>6.3f} {avg_mrr:>6.3f}  (n={n})")
-    else:
-        print("\nNo scored queries to average.")
+    if count == 0:
+        print("No queries evaluated.")
+        return
+
+    print("-" * len(header))
+    avg_label = f"AVG (n={count})"
+    print(f"{avg_label:<{q_w}}" + "".join(f"{totals[m]/count:>{col_w}.4f}" for m in metrics))
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--alpha", type=float, default=0.5)
+    args = parser.parse_args()
+    evaluate(args.alpha)

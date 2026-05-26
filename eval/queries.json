@@ -3,216 +3,213 @@
     "query_id": "Q01",
     "category": "treatment",
     "query": "levodopa carbidopa motor fluctuations wearing off Parkinson disease",
-    "relevant_nct_ids": [
-      "NCT05766813",
-      "NCT01766258",
-      "NCT00219284",
-      "NCT01484990",
-      "NCT05471609",
-      "NCT00642356",
-      "NCT00368108",
-      "NCT01296464"
+    "judgments": [
+      {"nct_id": "NCT05766813", "relevance": 2, "note": "Directly targets motor fluctuations in PD with adjunctive therapy"},
+      {"nct_id": "NCT01766258", "relevance": 2, "note": "Directly targets end-of-dose motor fluctuations in PD"},
+      {"nct_id": "NCT00219284", "relevance": 2, "note": "Carbidopa/levodopa/entacapone study on motor function in PD"},
+      {"nct_id": "NCT00642356", "relevance": 2, "note": "Carbidopa/levodopa/entacapone vs IR on wearing-off non-motor symptoms"},
+      {"nct_id": "NCT00368108", "relevance": 2, "note": "Levodopa-treated PD patients with motor fluctuations"},
+      {"nct_id": "NCT01296464", "relevance": 2, "note": "Compares levodopa/carbidopa/entacapone treatment regimens"},
+      {"nct_id": "NCT01484990", "relevance": 1, "note": "PK study of levodopa/carbidopa gel in advanced PD, not motor fluctuations focus"},
+      {"nct_id": "NCT05471609", "relevance": 1, "note": "Sustained release oral formulation for PD, broader than wearing-off focus"},
+      {"nct_id": "NCT03140956", "relevance": 1, "note": "Levodopa PK in healthy males, not PD patients with fluctuations"}
     ]
   },
   {
     "query_id": "Q02",
     "category": "treatment",
     "query": "dopamine agonist pramipexole ropinirole early Parkinson disease monotherapy",
-    "relevant_nct_ids": [
-      "NCT01723904",
-      "NCT00335166",
-      "NCT00434304",
-      "NCT01485172",
-      "NCT00144300",
-      "NCT00321854"
+    "judgments": [
+      {"nct_id": "NCT00434304", "relevance": 2, "note": "Ropinirole monotherapy in PD, direct match"},
+      {"nct_id": "NCT00335166", "relevance": 2, "note": "Pramipexole in early Parkinson disease"},
+      {"nct_id": "NCT00144300", "relevance": 2, "note": "Pramipexole IR vs ropinirole in early PD"},
+      {"nct_id": "NCT00321854", "relevance": 2, "note": "Pramipexole for early treatment of PD"},
+      {"nct_id": "NCT01485172", "relevance": 2, "note": "Ropinirole prolonged release dose response in early PD"},
+      {"nct_id": "NCT01723904", "relevance": 1, "note": "Rotigotine add-on to pramipexole/ropinirole, not monotherapy in early PD"},
+      {"nct_id": "NCT01007864", "relevance": 1, "note": "Dopamine agonist comparison study, not early monotherapy focus"},
+      {"nct_id": "NCT00666653", "relevance": 1, "note": "Dopamine agonist pharmacodynamics with levodopa, not monotherapy"},
+      {"nct_id": "NCT00465452", "relevance": 1, "note": "Switching to continuous release dopamine agonists, broader scope"}
     ]
   },
   {
     "query_id": "Q03",
     "category": "treatment",
     "query": "MAO-B inhibitor rasagiline selegiline neuroprotection Parkinson disease",
-    "relevant_nct_ids": [
-      "NCT01442610",
-      "NCT01098396",
-      "NCT03843944",
-      "NCT04870372",
-      "NCT01028586",
-      "NCT02278588",
-      "NCT01382342",
-      "NCT05611372",
-      "NCT01178047"
+    "judgments": [
+      {"nct_id": "NCT05611372", "relevance": 2, "note": "Rasagiline in prodromal PD, neuroprotection focus"},
+      {"nct_id": "NCT02789020", "relevance": 2, "note": "Rasagiline in PD progression study, disease modification focus"},
+      {"nct_id": "NCT04870372", "relevance": 2, "note": "Selegiline in PD, direct MAO-B inhibitor match"},
+      {"nct_id": "NCT01442610", "relevance": 1, "note": "Rasagiline in PD but focused on sleep, not neuroprotection"},
+      {"nct_id": "NCT01098396", "relevance": 1, "note": "Rasagiline for gait, not neuroprotection focus"},
+      {"nct_id": "NCT03843944", "relevance": 1, "note": "Switch from rasagiline to safinamide, not neuroprotection focus"},
+      {"nct_id": "NCT01049984", "relevance": 1, "note": "Rasagiline as add-on to dopamine agonist, not neuroprotection focus"},
+      {"nct_id": "NCT01382342", "relevance": 1, "note": "Rasagiline on cognition in PD, not neuroprotection focus"},
+      {"nct_id": "NCT02278588", "relevance": 1, "note": "Rasagiline effect on cognitive biomarkers, broader than neuroprotection"}
     ]
   },
   {
     "query_id": "Q04",
     "category": "treatment",
     "query": "alpha-synuclein immunotherapy antibody Parkinson disease disease modification",
-    "relevant_nct_ids": [
-      "NCT05634876"
+    "judgments": [
+      {"nct_id": "NCT05634876", "relevance": 2, "note": "UB-312 vaccine targeting synucleinopathies, direct immunotherapy match"},
+      {"nct_id": "NCT03156647", "relevance": 1, "note": "Alpha-synuclein in saliva for diagnosis, not immunotherapy"},
+      {"nct_id": "NCT06949670", "relevance": 1, "note": "Alpha-synuclein PET imaging study, not immunotherapy"},
+      {"nct_id": "NCT06621602", "relevance": 1, "note": "Phosphorylated alpha-synuclein as biomarker, not immunotherapy"},
+      {"nct_id": "NCT04020198", "relevance": 1, "note": "Alpha-synuclein aggregates as biomarker across biofluids, not immunotherapy"}
     ]
   },
   {
     "query_id": "Q05",
     "category": "device",
     "query": "deep brain stimulation subthalamic nucleus globus pallidus Parkinson",
-    "relevant_nct_ids": [
-      "NCT02647372",
-      "NCT01076452",
-      "NCT07250685",
-      "NCT00053625",
-      "NCT05262348",
-      "NCT00056563",
-      "NCT02823158"
+    "judgments": [
+      {"nct_id": "NCT02647372", "relevance": 2, "note": "GPi vs STN DBS in PD, direct match"},
+      {"nct_id": "NCT01076452", "relevance": 2, "note": "STN vs GPi DBS Phase II trial, direct match"},
+      {"nct_id": "NCT07250685", "relevance": 2, "note": "STN vs GPi DBS for PD, direct match"},
+      {"nct_id": "NCT00053625", "relevance": 2, "note": "DBS for PD trial, direct match"},
+      {"nct_id": "NCT00056563", "relevance": 2, "note": "DBS vs best medical therapy Phase I trial in PD"},
+      {"nct_id": "NCT02823158", "relevance": 2, "note": "Bilateral pallidal stimulation in advanced PD"},
+      {"nct_id": "NCT07410598", "relevance": 1, "note": "DBS patterned stimulation safety study, not STN/GPi comparison"},
+      {"nct_id": "NCT05262348", "relevance": 1, "note": "Adaptive vs conventional DBS, broader than STN/GPi focus"},
+      {"nct_id": "NCT02763397", "relevance": 1, "note": "DBS of nucleus basalis of Meynert, different target than STN/GPi"}
     ]
   },
   {
     "query_id": "Q06",
     "category": "device",
     "query": "focused ultrasound thalamotomy tremor Parkinson disease non-invasive",
-    "relevant_nct_ids": [
-      "NCT02692183",
-      "NCT04002596",
-      "NCT07284719",
-      "NCT07044973",
-      "NCT05624385",
-      "NCT05475340",
-      "NCT07172295",
-      "NCT01698450",
-      "NCT06259708"
+    "judgments": [
+      {"nct_id": "NCT02692183", "relevance": 2, "note": "MR-guided FUS thalamotomy for tremor in PD, direct match"},
+      {"nct_id": "NCT04002596", "relevance": 2, "note": "Transcranial MR-guided FUS for PD treatment, direct match"},
+      {"nct_id": "NCT07284719", "relevance": 2, "note": "MRgFUS for Parkinson's tremor, direct match"},
+      {"nct_id": "NCT07044973", "relevance": 2, "note": "VIM+PTT MRgFUS for PD, direct match"},
+      {"nct_id": "NCT05624385", "relevance": 2, "note": "MRgFUS thalamotomy for tremor, direct match"},
+      {"nct_id": "NCT01698450", "relevance": 1, "note": "MR-guided functional ultrasound for movement disorders, broader scope"},
+      {"nct_id": "NCT06259708", "relevance": 1, "note": "Low-intensity focused ultrasound for tremor in PD, not thalamotomy"}
     ]
   },
   {
     "query_id": "Q07",
     "category": "device",
     "query": "transcranial magnetic stimulation repetitive rTMS motor cortex Parkinson",
-    "relevant_nct_ids": [
-      "NCT03059212",
-      "NCT04638777",
-      "NCT04116216",
-      "NCT00955032",
-      "NCT06383247",
-      "NCT06583278",
-      "NCT07195773",
-      "NCT01080794",
-      "NCT07310238"
+    "judgments": [
+      {"nct_id": "NCT04638777", "relevance": 2, "note": "rTMS with H-coil in PD, direct match"},
+      {"nct_id": "NCT04116216", "relevance": 2, "note": "rTMS on motor function in PD phenotypes, direct match"},
+      {"nct_id": "NCT06383247", "relevance": 2, "note": "Precision rTMS for motor symptoms in PD, direct match"},
+      {"nct_id": "NCT06583278", "relevance": 2, "note": "rTMS in PD RCT, direct match"},
+      {"nct_id": "NCT01080794", "relevance": 2, "note": "rTMS for motor and mood in PD, direct match"},
+      {"nct_id": "NCT03059212", "relevance": 1, "note": "rTMS for working memory in PD, not motor cortex focus"},
+      {"nct_id": "NCT00955032", "relevance": 1, "note": "rTMS for apathy in PD, not motor cortex focus"},
+      {"nct_id": "NCT07195773", "relevance": 1, "note": "rTMS on balance and mobility in PD, partial motor match"}
     ]
   },
   {
     "query_id": "Q08",
     "category": "rehabilitation",
     "query": "physiotherapy exercise balance training falls prevention Parkinson disease",
-    "relevant_nct_ids": [
-      "NCT04063605",
-      "NCT05940077",
-      "NCT07399613",
-      "NCT07590700",
-      "NCT02476266",
-      "NCT07442370",
-      "NCT02488265",
-      "NCT02302144",
-      "NCT00518648",
-      "NCT02230267"
+    "judgments": [
+      {"nct_id": "NCT05940077", "relevance": 2, "note": "Community exercise for fall risk in PD, direct match"},
+      {"nct_id": "NCT07590700", "relevance": 2, "note": "Home-based exercise for fall prevention in PD, direct match"},
+      {"nct_id": "NCT02476266", "relevance": 2, "note": "Resistance training protocols to reduce falls in PD, direct match"},
+      {"nct_id": "NCT02302144", "relevance": 2, "note": "Multifactorial exercise to reduce falls in PD, direct match"},
+      {"nct_id": "NCT00518648", "relevance": 2, "note": "Reduction of falls in PD elderly, direct match"},
+      {"nct_id": "NCT02230267", "relevance": 2, "note": "High-intensity exercise and fall prevention in PD, direct match"},
+      {"nct_id": "NCT02488265", "relevance": 2, "note": "Balance training in PD, direct match"},
+      {"nct_id": "NCT04063605", "relevance": 1, "note": "Pilates for balance in PD, balance match but no falls focus"},
+      {"nct_id": "NCT07399613", "relevance": 1, "note": "Protective step training in PD, related but narrower scope"}
     ]
   },
   {
     "query_id": "Q09",
     "category": "rehabilitation",
     "query": "speech language therapy voice dysarthria swallowing Parkinson disease",
-    "relevant_nct_ids": [
-      "NCT00123084",
-      "NCT02506205",
-      "NCT06593860",
-      "NCT06416553",
-      "NCT04966689",
-      "NCT02407067",
-      "NCT02935842",
-      "NCT02973698",
-      "NCT03700684",
-      "NCT02265315"
+    "judgments": [
+      {"nct_id": "NCT00123084", "relevance": 2, "note": "Voice treatment efficacy in PD, direct match"},
+      {"nct_id": "NCT02506205", "relevance": 2, "note": "LSVT LOUD for hypokinetic dysarthria in PD, direct match"},
+      {"nct_id": "NCT06593860", "relevance": 2, "note": "Dysarthria management study, direct match"},
+      {"nct_id": "NCT06416553", "relevance": 2, "note": "Speech therapy combined with brain stimulation in PD, direct match"},
+      {"nct_id": "NCT03700684", "relevance": 2, "note": "Voice treatment for PD, direct match"},
+      {"nct_id": "NCT02265315", "relevance": 2, "note": "Augmenting voice therapy effects in PD, direct match"},
+      {"nct_id": "NCT02973698", "relevance": 2, "note": "Chin down maneuver for swallowing in PD, direct match"},
+      {"nct_id": "NCT04966689", "relevance": 1, "note": "Combined speech and music therapy in PD, partial match"},
+      {"nct_id": "NCT02407067", "relevance": 1, "note": "Voice amplifiers in PD, related but device rather than therapy focus"}
     ]
   },
   {
     "query_id": "Q10",
     "category": "symptoms",
     "query": "Parkinson disease dementia cognitive decline cholinesterase inhibitor rivastigmine",
-    "relevant_nct_ids": [
-      "NCT03840837",
-      "NCT00623103",
-      "NCT00767091",
-      "NCT01340885",
-      "NCT00988117",
-      "NCT04226248",
-      "NCT02258152",
-      "NCT01856738",
-      "NCT02450786",
-      "NCT01014858"
+    "judgments": [
+      {"nct_id": "NCT00623103", "relevance": 2, "note": "Rivastigmine for dementia in PD, direct match"},
+      {"nct_id": "NCT00767091", "relevance": 2, "note": "Rivastigmine for parkinsonian apathy without dementia, direct match"},
+      {"nct_id": "NCT00988117", "relevance": 2, "note": "Rivastigmine patch for memory and thinking in PD, direct match"},
+      {"nct_id": "NCT01014858", "relevance": 2, "note": "Donepezil in early PD dementia, direct cholinesterase inhibitor match"},
+      {"nct_id": "NCT02450786", "relevance": 2, "note": "Donepezil for cognition in PD-MCI, direct match"},
+      {"nct_id": "NCT03840837", "relevance": 2, "note": "Cholinergic neurotransmission in cognition in PD, direct match"},
+      {"nct_id": "NCT01856738", "relevance": 1, "note": "Cholinesterase inhibitors for hallucinations in PD, related but not dementia/cognitive focus"},
+      {"nct_id": "NCT04226248", "relevance": 1, "note": "Cholinesterase inhibitor to prevent falls in PD, related but not dementia focus"},
+      {"nct_id": "NCT01340885", "relevance": 1, "note": "Cognitive decline in non-demented PD, broader than cholinesterase inhibitor focus"}
     ]
   },
   {
     "query_id": "Q11",
     "category": "symptoms",
     "query": "Parkinson disease depression anxiety psychiatric non-motor antidepressant",
-    "relevant_nct_ids": [
-      "NCT00304161",
-      "NCT04932434",
-      "NCT01323699",
-      "NCT00086190",
-      "NCT03904654",
-      "NCT02552836",
-      "NCT01545414",
-      "NCT04469049",
-      "NCT00847431"
+    "judgments": [
+      {"nct_id": "NCT00304161", "relevance": 2, "note": "Antidepressant treatment for depression in PD, direct match"},
+      {"nct_id": "NCT04932434", "relevance": 2, "note": "Psilocybin for depression and anxiety in PD, direct match"},
+      {"nct_id": "NCT01323699", "relevance": 2, "note": "Behavioural treatments for anxiety and depression in PD, direct match"},
+      {"nct_id": "NCT00086190", "relevance": 2, "note": "Antidepressants in PD, direct match"},
+      {"nct_id": "NCT01545414", "relevance": 2, "note": "Internet-CBT for depression and anxiety in PD, direct match"},
+      {"nct_id": "NCT02552836", "relevance": 1, "note": "Psychotherapy for depressed PD patients, related but not antidepressant focus"},
+      {"nct_id": "NCT03904654", "relevance": 1, "note": "Mindfulness-based cognitive therapy in PD, broader psychiatric but not antidepressant"}
     ]
   },
   {
     "query_id": "Q12",
     "category": "symptoms",
     "query": "Parkinson disease dyskinesia levodopa-induced amantadine extended release",
-    "relevant_nct_ids": [
-      "NCT01397422",
-      "NCT02153632",
-      "NCT02153645",
-      "NCT02589340",
-      "NCT02274766",
-      "NCT01538329",
-      "NCT02202551",
-      "NCT02136914",
-      "NCT01338662",
-      "NCT05435729"
+    "judgments": [
+      {"nct_id": "NCT01397422", "relevance": 2, "note": "Extended release amantadine for levodopa-induced dyskinesia, direct match"},
+      {"nct_id": "NCT02153632", "relevance": 2, "note": "Amantadine HCl ER for LID in PD, direct match"},
+      {"nct_id": "NCT02153645", "relevance": 2, "note": "Amantadine HCl ER for LID in PD, direct match"},
+      {"nct_id": "NCT02274766", "relevance": 2, "note": "ADS-5102 (amantadine ER) for LID in PD, direct match"},
+      {"nct_id": "NCT02136914", "relevance": 2, "note": "ADS-5102 for levodopa-induced dyskinesia, direct match"},
+      {"nct_id": "NCT02202551", "relevance": 2, "note": "Open-label ADS-5102 (amantadine ER) for LID, direct match"},
+      {"nct_id": "NCT01538329", "relevance": 2, "note": "Amantadine and L-DOPA-induced dyskinesia in early PD, direct match"},
+      {"nct_id": "NCT02589340", "relevance": 1, "note": "Buspirone combined with amantadine for LID, partial match"},
+      {"nct_id": "NCT01338662", "relevance": 1, "note": "Incidence of dyskinesia with amantadine or dopamine agonist, observational"}
     ]
   },
   {
     "query_id": "Q13",
     "category": "gait_freezing",
     "query": "freezing of gait Parkinson disease visual auditory cueing wearable sensor",
-    "relevant_nct_ids": [
-      "NCT05854147",
-      "NCT07212205",
-      "NCT03978507",
-      "NCT05080413",
-      "NCT02317289",
-      "NCT04459559",
-      "NCT00727467",
-      "NCT05019469",
-      "NCT00322426",
-      "NCT05790759"
+    "judgments": [
+      {"nct_id": "NCT05854147", "relevance": 2, "note": "Visual and auditory cues for freezing of gait in PD, direct match"},
+      {"nct_id": "NCT03978507", "relevance": 2, "note": "Digital wearable walking aid for freezing of gait in PD, direct match"},
+      {"nct_id": "NCT05080413", "relevance": 2, "note": "Sensory cueing modalities for freezing of gait, direct match"},
+      {"nct_id": "NCT04459559", "relevance": 2, "note": "Novel cueing device for PD patients, direct match"},
+      {"nct_id": "NCT00727467", "relevance": 2, "note": "Auditory cueing device for freezing and gait in PD, direct match"},
+      {"nct_id": "NCT05019469", "relevance": 2, "note": "Responsive cueing for gait freeze in PD, direct match"},
+      {"nct_id": "NCT00322426", "relevance": 2, "note": "Sensory cues for freezing in PD, direct match"},
+      {"nct_id": "NCT07212205", "relevance": 1, "note": "Freezing in PD general study, no specific cueing or wearable focus"},
+      {"nct_id": "NCT02317289", "relevance": 1, "note": "Assisted device for freezing in PD, broader than cueing/sensor focus"}
     ]
   },
   {
     "query_id": "Q14",
     "category": "gait_freezing",
     "query": "Parkinson disease postural instability gait disorder treadmill rehabilitation",
-    "relevant_nct_ids": [
-      "NCT05784025",
-      "NCT03546244",
-      "NCT02098707",
-      "NCT04117737",
-      "NCT03021408",
-      "NCT03815409",
-      "NCT06104072",
-      "NCT05198076",
-      "NCT05022147",
-      "NCT01427062"
+    "judgments": [
+      {"nct_id": "NCT05784025", "relevance": 2, "note": "Anti-gravity treadmill for gait training in PD, direct match"},
+      {"nct_id": "NCT03546244", "relevance": 2, "note": "Musical treadmill in PD rehabilitation, direct match"},
+      {"nct_id": "NCT03815409", "relevance": 2, "note": "Treadmill in rehabilitation of parkinsonian gait, direct match"},
+      {"nct_id": "NCT04117737", "relevance": 2, "note": "Virtual reality and anti-gravity treadmill for gait in PD, direct match"},
+      {"nct_id": "NCT03021408", "relevance": 2, "note": "Rehabilitation approaches for gait in PD, direct match"},
+      {"nct_id": "NCT02098707", "relevance": 1, "note": "Balance rehabilitation in PD with stabilometric platform, no treadmill focus"},
+      {"nct_id": "NCT01427062", "relevance": 1, "note": "Balance training to reduce falls in PD, related but not treadmill/gait disorder focus"}
     ]
   }
 ]

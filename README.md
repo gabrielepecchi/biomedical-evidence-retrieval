@@ -87,6 +87,24 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V3.1 — Graded Retrieval Benchmark
+
+- **`eval/queries.json` now uses graded judgments** instead of a flat list of `relevant_nct_ids`. Each query carries a `judgments` array of objects with `nct_id`, `relevance` (0, 1, or 2), and an optional `note`.
+- **Relevance scale:** 2 = highly relevant, 1 = partially relevant, 0 = not relevant. NCT IDs absent from the judgments list are treated as relevance 0.
+- **`eval/evaluate.py` updated** to read the new schema, compute binary metrics (Precision@5, Hit@5, Recall@10, MRR) using relevance ≥ 1 as the relevant threshold, and add **nDCG@10** using the full 0/1/2 graded values.
+- **The benchmark still covers the same 14 candidate-based queries**, so scores are improved by the richer signal but this remains an internal benchmark rather than a definitive evaluation.
+- **Hybrid alpha=0.5 performed best overall** across all five metrics.
+
+### Benchmark Results
+
+| Method | Precision@5 | Hit@5 | Recall@10 | MRR | nDCG@10 |
+|---|---:|---:|---:|---:|---:|
+| BM25-only alpha=1.0 | 0.8000 | 1.0000 | 0.7400 | 0.9167 | 0.7123 |
+| Semantic-only alpha=0.0 | 0.6571 | 1.0000 | 0.6335 | 0.8571 | 0.6469 |
+| Hybrid alpha=0.5 | 0.9857 | 1.0000 | 0.9921 | 1.0000 | 0.9270 |
+
+---
+
 ## Project Structure
 
 ```
@@ -116,7 +134,7 @@ biomedical-evidence-retrieval/
 ├── ui/
 │   └── streamlit_app.py       # Streamlit frontend
 ├── eval/
-│   ├── queries.json           # Curated evaluation queries
+│   ├── queries.json           # Curated evaluation queries with graded judgments
 │   ├── candidates_alpha_0_5.json  # Top-10 candidates used for relevance labelling
 │   ├── evaluate.py            # Evaluation script
 │   ├── compare_retrievers.py  # Retriever comparison script (V2.3)
@@ -217,7 +235,7 @@ To narrow results, expand the "Filters (optional)" section and enter a value for
 
 ## Evaluation
 
-The evaluation script measures retrieval quality over 14 manually curated queries defined in `eval/queries.json`.
+The evaluation script measures retrieval quality over 14 manually curated queries defined in `eval/queries.json`. Judgments use a graded relevance scale (0 = not relevant, 1 = partially relevant, 2 = highly relevant); NCT IDs absent from a query's judgments are treated as relevance 0.
 
 ```bash
 # Evaluate with default alpha=0.5
@@ -232,10 +250,11 @@ python -m eval.evaluate --alpha 0.0
 
 Metrics reported per query:
 
-- **Precision@5** — fraction of the top 5 results that are relevant
+- **Precision@5** — fraction of the top 5 results that are relevant (relevance ≥ 1)
 - **Hit@5** — whether at least one relevant result appears in the top 5
 - **Recall@10** — fraction of all relevant results recovered in the top 10
 - **MRR** — reciprocal rank of the first relevant result
+- **nDCG@10** — normalised discounted cumulative gain at 10, using graded relevance values 0/1/2
 
 > The API must be running before you run the evaluation script.
 
@@ -246,7 +265,7 @@ Metrics reported per query:
 - Data is limited to trials matching a single condition filter (Parkinson disease) from ClinicalTrials.gov.
 - The embedding model (`all-MiniLM-L6-v2`) is a general-purpose model, not specialised for biomedical text.
 - Summaries are template-based and only include fields present in the database — no language generation.
-- Evaluation relevance labels are manually assigned by reviewing retrieved candidates; they are not a definitive clinical benchmark and should be reviewed and expanded before using the metrics as a rigorous benchmark.
+- Evaluation relevance labels are manually assigned by reviewing retrieved candidates; the benchmark covers 14 candidate-based queries and should be expanded with broader, independently sourced judgments before being used as a rigorous benchmark.
 - No authentication, no cloud deployment, no persistent user sessions.
 
 ---
