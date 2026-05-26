@@ -1,0 +1,1406 @@
+[
+  {
+    "case_id": "PC01",
+    "matching_query": "freezing of gait Parkinson disease visual auditory cueing wearable sensor",
+    "target_category": "gait_freezing",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT05854147",
+        "title": "Comparison of Effects of TT With and Without Visual and Auditory Cues for Freezing & Gait Patients With PD",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8829487562179565,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT07212205",
+        "title": "Freezing in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.838349366517657,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT03978507",
+        "title": "Digital Wearable Walking Aid for Freezing of Gait in Parkinson\u00b4s Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.83477071363302,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT05080413",
+        "title": "Comparison of Sensory Cuing Modalities for Freezing of Gait",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8330171049362629,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02317289",
+        "title": "Assisted Device for Freezing in Parkinson Disease",
+        "overall_status": "TERMINATED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8238450482311941,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT04459559",
+        "title": "Usability of a Novel Cueing Device for Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8007573913694959,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00727467",
+        "title": "A Randomised Controlled Trial (RCT) to Evaluate Use of an Individual Auditory Cueing Device's (IACD's) on Freezing and Gait in People With Parkinson's Disease (PD)",
+        "overall_status": "UNKNOWN",
+        "phase": "PHASE1, PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8005710054519122,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT05019469",
+        "title": "Overcoming Gait Freeze in Parkinson's Disease Using Responsive Cueing",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7965866937901992,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00322426",
+        "title": "Sensory Cues for Freezing in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7958080491837439,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05790759",
+        "title": "Effect of Haptic Cueing on Long-Range Autocorrelations in Parkinson's Disease Gait Variability",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7509116312912189,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC02",
+    "matching_query": "levodopa carbidopa motor fluctuations wearing off Parkinson disease",
+    "target_category": "treatment",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT05766813",
+        "title": "Lenrispodun as Adjunctive Therapy in the Treatment of Patients With Motor Fluctuations Due to Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7648831562060954,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01766258",
+        "title": "Efficacy and Safety Proof of Concept Study in Patients With Parkinson's Disease and End-of-dose Motor Fluctuations",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7329152775380718,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT00219284",
+        "title": "Effects of Carbidopa/Levodopa/Entacapone on Motor Function and Quality of Life in Patients With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7246685861995017,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT01484990",
+        "title": "A Pharmacokinetic Study of Levodopa and Carbidopa Intestinal Gel in Subjects With Advanced Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7032540316711346,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05471609",
+        "title": "Sustained Release Oral Formulation for Treatment of Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "EARLY_PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.683732936294625,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT00642356",
+        "title": "Carbidopa/Levodopa/Entacapone Versus Immediate Release (IR) Carbidopa/Levodopa on Non-motor Symptoms in Patients With Idiopathic Parkinson's Disease and Demonstrating Non-motor Symptoms of Wearing Off",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6696237477581806,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00368108",
+        "title": "Efficacy, Safety, and Tolerability of E2007 in Levodopa Treated Parkinson's Disease Patients With Motor Fluctuations",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6645266875497462,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT07229651",
+        "title": "Metformin in Parkinson Disease",
+        "overall_status": "RECRUITING",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6589932083263077,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT03140956",
+        "title": "Pharmacokinetic of Levodopa Study in Healthy Males",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6539124824950441,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT01296464",
+        "title": "Comparing Different Levodopa/Carbidopa/Entacapone Treatment Regimens",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.650738441768963,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC03",
+    "matching_query": "Parkinson disease dyskinesia levodopa-induced amantadine extended release",
+    "target_category": "symptoms",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT01397422",
+        "title": "Extended Release Amantadine Safety and Efficacy Study in Levodopa-Induced Dyskinesia (EASED Study)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.9039528369903564,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT02153632",
+        "title": "Efficacy and Safety of Amantadine Hydrogen Chloride (HCl) ER Tablets in Parkinson's Disease Subjects With LID",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.810187494247609,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT02153645",
+        "title": "Efficacy and Safety of Amantadine Hydrochloride (HCl) ER Tablets to Treat Parkinson's Disease Patients With LID.",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7679386399840262,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT02589340",
+        "title": "Buspirone, in Combination With Amantadine, for the Treatment of Levodopa-induced Dyskinesia",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7481954934404373,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02274766",
+        "title": "Efficacy and Safety Study of ADS-5102 in PD Patients With Levodopa-Induced Dyskinesia",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7462496123301088,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT01538329",
+        "title": "Amantadine and L-DOPA-induced Dyskinesia in Early Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6817527762644826,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02202551",
+        "title": "Open-Label Safety Study of ADS-5102 in PD Patients With LID",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6614548980018189,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02136914",
+        "title": "ADS-5102 for the Treatment of Levodopa Induced Dyskinesia (EASE LID Study)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6499121304668792,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01338662",
+        "title": "Comparison of the Incidence of Dyskinesia in Parkinson's Disease Who Were Treated With Amantadine or Dopamine Agonist",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6434600821796452,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05435729",
+        "title": "A Pharmacodynamics and Safety Study of DSP-9632P in Patients With Levodopa-Induced Dyskinesia in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.64270481058937,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC04",
+    "matching_query": "focused ultrasound thalamotomy tremor Parkinson disease non-invasive",
+    "target_category": "device",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT02692183",
+        "title": "Mapping Functional Networks of Brain Activity Using EEG in Patients With Essential Tremor or Parkinson Disease Before and After MR-guided Focused Ultrasound Thalamotomy for Tremor",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.8490384817123413,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT04002596",
+        "title": "Safety and Initial Effectiveness of Transcranial MR Guided Focused Ultrasound for the Treatment of Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8340102368457182,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07284719",
+        "title": "MRgFUS for Parkinson's Tremor",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8314609458023653,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT07044973",
+        "title": "VIM+PTT MRgFUS for PD",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.719335670121559,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05624385",
+        "title": "MRgFUS Thalamotomy for Therapy-Resistant Tremor-related Disease With Low SDR Value",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.716797596533656,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT05475340",
+        "title": "Open Label Study for the Use of Transcranial Ultrasound Treatment of Tremor",
+        "overall_status": "UNKNOWN",
+        "phase": "EARLY_PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6859610246313217,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT07172295",
+        "title": "Modulate Tremor Severity With Low-intensity Focused Ultrasound Stimulation Targeting the Deep Nucleus of Patients With Refractory Hand Tremor.",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6857351411701529,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT06799923",
+        "title": "Possibilities of Use MRI-Guided Laser Interstitial Thermal Therapy in Medically Intractable Tremor",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6659080570700981,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT01698450",
+        "title": "Magnetic Resonance (MR) Guided Functional Ultrasound-Neurosurgery for Movement Disorders",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6584201855568677,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT06259708",
+        "title": "Using Low Intensity Focused Ultrasound to Modulate Deep Brain Areas for Tremor Control in Parkinson's Disease Patients.",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6581572259948778,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC05",
+    "matching_query": "deep brain stimulation subthalamic nucleus globus pallidus Parkinson",
+    "target_category": "device",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT02647372",
+        "title": "Deep Brain Stimulation for Parkinson's Disease: the Globus Pallidus Internus Versus Subthalamic Nucleus",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.9089683522544076,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT01076452",
+        "title": "Phase II Subthalamic Nucleus (STN) vs. Globus Pallidus (GPi) Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8795355260372162,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07250685",
+        "title": "Subthalamic Nucleus Versus Globus Pallidal Internus Deep Brain Stimulation for Parkinson Disease",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8785628385191673,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00053625",
+        "title": "Deep Brain Stimulation for Parkinson's Disease Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.823642689822615,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT07410598",
+        "title": "Safety and Tolerability of Patterned Stimulation for DBS in the Home Setting",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7617600524361284,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT05262348",
+        "title": "An Open-label Clinical Trial to Compare the Safety and Effectiveness of Adaptive Versus Conventional Deep Brain Stimulation",
+        "overall_status": "WITHDRAWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7433682603246901,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT04725773",
+        "title": "Apraxia in Parkinson's Disease Patients With Deep Brain Stimulation",
+        "overall_status": "TERMINATED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7400402712412992,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT00056563",
+        "title": "Phase I Deep Brain Stimulation (DBS) vs. Best Medical Therapy (BMT) Trial",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7297006063934652,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT02763397",
+        "title": "Deep Brain Stimulation (DBS) of the Nucleus Basalis of Meynert (NbM) in Patients With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7281616406033333,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02823158",
+        "title": "Bilateral Pallidal Stimulation in Patients With Advanced Parkinson's Disease-LATESTIM",
+        "overall_status": "TERMINATED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7184293811230025,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC06",
+    "matching_query": "physiotherapy exercise balance training falls prevention Parkinson disease",
+    "target_category": "rehabilitation",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT04063605",
+        "title": "The Effect of Clinical Pilates Training on Balance and Postural Control of People With Parkinson's Disease.",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8884543180465698,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT05940077",
+        "title": "Community Exercise for Fall Risk in PD",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8304457179578172,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07399613",
+        "title": "Effects of Protective Step Training on Proactive and Reactive Motor Adaptations in Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7864062125326235,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT07590700",
+        "title": "Home-Based Exercise Programs for Fall Prevention in Parkinson Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7745533880182904,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02476266",
+        "title": "Two Resistance Training Protocols to Reduce the Risk of Falls in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7535548328005286,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT07442370",
+        "title": "The Effect of Functional Rotational Exercises on Fall Risk and Mobility in Parkinson's Disease Patients",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7508410062307156,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02488265",
+        "title": "Protocol: Balance Training in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7069254754208993,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02302144",
+        "title": "A Multifactorial Exercise Program to Reduce Falls in People With Parkinson Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7029177476837112,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00518648",
+        "title": "Reduction of Falls in the Elderly - Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6994364823683134,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02230267",
+        "title": "High-intensity Exercise and Fall Prevention Boot Camp for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6889553525295921,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC07",
+    "matching_query": "speech language therapy voice dysarthria swallowing Parkinson disease",
+    "target_category": "rehabilitation",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT00123084",
+        "title": "Efficacy of Voice Treatment for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8955082893371582,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT02506205",
+        "title": "The Effect of LSVT LOUD for Mandarin-speaking Individuals With Hypokinetic Dysarthria Due to Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8554658485274611,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT06593860",
+        "title": "Dysarthria Management for Minor Groups",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8134883373152566,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT06416553",
+        "title": "Effect of Speech Therapy in Combination With Non-invasive Brain Stimulation on Speech of Patients With Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7932705568373448,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT04966689",
+        "title": "The Effect of Combined Speech and Music-therapy on the Speech Characteristics of People With Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7900505583100705,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT02407067",
+        "title": "A Comparison of Voice Amplifiers and Personal Communication Systems in Individuals With Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7521637683201741,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02935842",
+        "title": "Evaluation of Intensive Language Therapy",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7402865908292792,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02973698",
+        "title": "Benefit From the Chin Down Maneuver in the Swallowing Performance and Self-perception of Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7369885813132873,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT03700684",
+        "title": "Voice Treatment for Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7355239865201593,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02265315",
+        "title": "Augmenting Treatment Effects of Voice Therapy in Parkinson Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7276059669609438,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC08",
+    "matching_query": "Parkinson disease mild cognitive impairment MCI conversion risk intervention",
+    "target_category": "cognitive_nonmotor",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT06640673",
+        "title": "Electrophysiological Signature of Mild Cognitive Impairment and Its Relationship with Parkinson's Disease: a High-density EEG Investigation",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7697286605834961,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT03687203",
+        "title": "Cognitive-driven ADL Impairment as a Predictor for PDD",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.768999496757474,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT07214974",
+        "title": "Mild Cognitive Impairment Community Screening and Early Intervention Via Stem Cell Therapy and Wearable Brain Computer Interface Device.",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": "EARLY_PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.746803769500785,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT01870518",
+        "title": "Neurocognitive Effects of Bilateral STN Versus GPi DBS in Parkinson's Disease Patients With MCI",
+        "overall_status": "TERMINATED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7227206276618385,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT04810104",
+        "title": "Parkinson's Disease With Mild Cognitive Impairment Treated With Nicotinic Agonist Drug",
+        "overall_status": "WITHDRAWN",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7021817350559811,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT02637089",
+        "title": "Longitudinal Study of Mild Cognitive Impairment in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6851675427728114,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT05476302",
+        "title": "Effect of Remote Cognitive Intervention in Patients With Parkinson's Disease During the COVID-19 Pandemic",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6740035132246287,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT05806866",
+        "title": "Progression in Cognitive ADLs in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6724240869957803,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT04476017",
+        "title": "A Study to Evaluate the Safety and Tolerability of SAGE-718 in Participants With Parkinson's Disease Mild Cognitive Impairment (PD-MCI)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6532685122456351,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT04171804",
+        "title": "Efficacy of Transcranial Direct Current Stimulation In Parkinson's Disease MCI",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.6515865949684522,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC09",
+    "matching_query": "Parkinson disease depression anxiety psychiatric non-motor antidepressant",
+    "target_category": "symptoms",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT00304161",
+        "title": "Effectiveness of Antidepressant Treatment for Depression in People With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8510193228721619,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT04932434",
+        "title": "Psilocybin Therapy for Depression and Anxiety in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8441751378930318,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT01323699",
+        "title": "Behavioral Treatments for Anxiety and Depression in Veterans With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1, PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8159746052286637,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00086190",
+        "title": "Study of Antidepressants in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8083103658182689,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT03904654",
+        "title": "Mindfulness-based Cognitive Therapy (MBCT) for People With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7509883227588827,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT02552836",
+        "title": "Efficacy of Psychotherapy for Depressed Parkinson's Disease Patients",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7411938920460885,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT01545414",
+        "title": "Internet-CBT (Cognitive Behavioral Therapy) for Depression and Anxiety in Parkinsons Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7390208191921449,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT04469049",
+        "title": "MBCT for People With Parkinson's Disease and Caregivers",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7329091973885942,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT00847431",
+        "title": "Mapping Mood in the Subthalamic Nucleus in Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7007680309288195,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT05959161",
+        "title": "Study on Brain Network Mechanism of Deep Brain Stimulation for Parkinson's Disease",
+        "overall_status": "NOT_YET_RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6875557598621792,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC10",
+    "matching_query": "levodopa carbidopa intestinal gel LCIG duodopa infusion advanced Parkinson disease",
+    "target_category": "advanced_therapy",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT01484990",
+        "title": "A Pharmacokinetic Study of Levodopa and Carbidopa Intestinal Gel in Subjects With Advanced Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.896700793682103,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT00357994",
+        "title": "Study of Efficacy, Safety and Tolerability of Levodopa-Carbidopa Intestinal Gel in Levodopa-Responsive Parkinson's Subjects",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8941575288772583,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT00660387",
+        "title": "Study of Efficacy, Safety and Tolerability of Levodopa-Carbidopa Intestinal Gel in Levodopa-Responsive Parkinson's Subjects",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8770219233560748,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT03602924",
+        "title": "Long-term Safety and Effectiveness of Levodopa-carbidopa Intestinal Gel Infusion",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.8696337027437177,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT06432309",
+        "title": "Opicapone as Adjunctive Therapy to Levodopa-Carbidopa Intestinal Gel in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8423010779245332,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT00335153",
+        "title": "Levodopa-Carbidopa Intestinal Gel Open-Label Study in Advanced Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7986076429573743,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT00141518",
+        "title": "Long-term Study of Duodopa (Levodopa/Carbidopa) in Advanced Parkinson's: Health Outcomes & Net Economic Impact",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7751379516054637,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT02448914",
+        "title": "A Study to Compare Plasma Levels of Levodopa, Carbidopa and Entacapone After TRIGEL or Duodopa Infusion in PD Patients",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7677028267818422,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT03419806",
+        "title": "Study Comparing Intravenous and Subcutaneous Infudopa With Intestinal Duodopa in Patients With Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7519629191266047,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT02549092",
+        "title": "A Study to Examine the Effect of Levodopa-Carbidopa Intestinal Gel (LCIG) Therapy Relative to That of Optimized Medical Treatment (OMT) on Non-motor Symptoms (NMS) Associated With Advanced Parkinson's Disease (PD)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.723572389342178,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC11",
+    "matching_query": "wearable accelerometer digital biomarker bradykinesia tremor Parkinson disease monitoring",
+    "target_category": "diagnosis",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT06847581",
+        "title": "JAME, a Wearable Device to Control Tremor",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8243305683135986,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT05680961",
+        "title": "Monitoring Movement Disorder Symptoms With a Mobile Medical App on Off-the-shelf Consumer Mobile Devices",
+        "overall_status": "UNKNOWN",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.8141301079290499,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT05780866",
+        "title": "Remote Monitoring in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7018422620625477,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT01356056",
+        "title": "Tele-diagnostics for Remote Parkinson's Monitoring",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.7001490664893592,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT02668835",
+        "title": "GADGET-PD Genetic and Digital Diagnosis of Essential Tremor and Parkinson's Disease Trial",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6928620252371673,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT03681015",
+        "title": "Wearable Assessments in the Clinic and Home in PD",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6925092818512806,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02523807",
+        "title": "Tremor Monitoring Device",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6735718432710125,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT06817772",
+        "title": "Digital BIOmarkers for the Assessment of Motor Status in Parkinson's Disease Patients with CLInical and ThErapeutic Application",
+        "overall_status": "ENROLLING_BY_INVITATION",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6658026330625787,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT05247294",
+        "title": "Assessment of Fluctuating Parkinson's Disease With Sensor-based Home Monitoring",
+        "overall_status": "COMPLETED",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6652614463977928,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT06573762",
+        "title": "Home-Based Monitoring in Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": null,
+        "study_type": "OBSERVATIONAL",
+        "hybrid_score": 0.6553193230662432,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  },
+  {
+    "case_id": "PC12",
+    "matching_query": "Parkinson disease autonomic dysfunction orthostatic hypotension non-motor management",
+    "target_category": "symptoms",
+    "matches": [
+      {
+        "rank": 1,
+        "nct_id": "NCT03900000",
+        "title": "Improved Orthostatic Tolerance = Better Cognitive Function in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8395748874865461,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 1 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 2,
+        "nct_id": "NCT05487300",
+        "title": "Effect of Levodopa on Cardiovascular Autonomic Function in Parkinson's Disease",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2, PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8291063700152037,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 2 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 3,
+        "nct_id": "NCT02705755",
+        "title": "TD-9855 Phase 2 in Neurogenic Orthostatic Hypotension (nOH)",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE2",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8280735015869141,
+        "compatibility_label": "likely_relevant",
+        "compatibility_reason": "Rank 3 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 4,
+        "nct_id": "NCT00103597",
+        "title": "Efficacy of Therapeutic Interventions for Orthostatic Hypotension in Parkinson's Disease and Multiple System Atrophy",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE1",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.8036509631754449,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 4 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 5,
+        "nct_id": "NCT05551377",
+        "title": "Head-up Tilt Sleeping to Alleviate Orthostatic Hypotension, Supine Hypertension and Nocturia in Parkinson's Disease",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7694892324096214,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 5 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 6,
+        "nct_id": "NCT03829657",
+        "title": "Phase 3 Clinical Effect Durability of TD-9855 for Treating Symptomatic nOH in Subjects With Primary Autonomic Failure",
+        "overall_status": "TERMINATED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7549960798040845,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 6 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 7,
+        "nct_id": "NCT02586623",
+        "title": "Sustained Effect of Droxidopa in Symptomatic Neurogenic Orthostatic Hypotension",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE4",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7365364345113481,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 7 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 8,
+        "nct_id": "NCT06920134",
+        "title": "Epidural Electrical Stimulation to Support Hemodynamic Management in Individuals With Parkinson's Disease",
+        "overall_status": "RECRUITING",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7206146665430466,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 8 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 9,
+        "nct_id": "NCT04920552",
+        "title": "Abdominal Binders to Treat Orthostatic Hypotension in Parkinsonian Syndromes",
+        "overall_status": "UNKNOWN",
+        "phase": "NA",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7170402395492427,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 9 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      },
+      {
+        "rank": 10,
+        "nct_id": "NCT00782340",
+        "title": "A Clinical Study for Patients With Neurogenic Orthostatic Hypotension (NOH) Using Droxidopa",
+        "overall_status": "COMPLETED",
+        "phase": "PHASE3",
+        "study_type": "INTERVENTIONAL",
+        "hybrid_score": 0.7152497057805435,
+        "compatibility_label": "possibly_relevant",
+        "compatibility_reason": "Rank 10 in hybrid retrieval (alpha=0.5). This label reflects retrieval score and rank only. It does not indicate clinical eligibility or suitability for trial participation."
+      }
+    ]
+  }
+]
