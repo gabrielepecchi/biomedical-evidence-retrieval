@@ -1,12 +1,12 @@
-# Biomedical Evidence Retrieval and Trial Matching Platform
+# Biomedical Evidence Retrieval Benchmark
 
-A portfolio project that lets you search clinical trial records using a hybrid retrieval pipeline combining BM25 and semantic similarity, with a FastAPI backend and a Streamlit frontend.
+A portfolio project that benchmarks hybrid retrieval over clinical trial records, combining BM25 and semantic similarity, with a FastAPI backend and a Streamlit frontend.
 
 ---
 
 ## Overview
 
-This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request. Results can be narrowed using optional filters for status, phase, and study type.
+This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request. Results can be narrowed using optional filters for status, phase, and study type. Retrieval quality is measured against a curated benchmark of 46 Parkinson-related queries with graded relevance judgments.
 
 ---
 
@@ -92,16 +92,16 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 - **`eval/queries.json` now uses graded judgments** instead of a flat list of `relevant_nct_ids`. Each query carries a `judgments` array of objects with `nct_id`, `relevance` (0, 1, or 2), and an optional `note`.
 - **Relevance scale:** 2 = highly relevant, 1 = partially relevant, 0 = not relevant. NCT IDs absent from the judgments list are treated as relevance 0.
 - **`eval/evaluate.py` updated** to read the new schema, compute binary metrics (Precision@5, Hit@5, Recall@10, MRR) using relevance ≥ 1 as the relevant threshold, and add **nDCG@10** using the full 0/1/2 graded values.
-- **The benchmark still covers the same 14 candidate-based queries**, so scores are improved by the richer signal but this remains an internal benchmark rather than a definitive evaluation.
-- **Hybrid alpha=0.5 performed best overall** across all five metrics.
+- **`eval/queries.json` now contains 46 curated Parkinson-related retrieval queries**, all with graded judgments, expanded from the original 14.
+- **Hybrid alpha=0.5 performed best overall** across all five metrics. The benchmark remains candidate-based and should not be treated as a definitive clinical benchmark.
 
 ### Benchmark Results
 
 | Method | Precision@5 | Hit@5 | Recall@10 | MRR | nDCG@10 |
 |---|---:|---:|---:|---:|---:|
-| BM25-only alpha=1.0 | 0.8000 | 1.0000 | 0.7400 | 0.9167 | 0.7123 |
-| Semantic-only alpha=0.0 | 0.6571 | 1.0000 | 0.6335 | 0.8571 | 0.6469 |
-| Hybrid alpha=0.5 | 0.9857 | 1.0000 | 0.9921 | 1.0000 | 0.9270 |
+| BM25-only alpha=1.0 | 0.8391 | 0.9783 | 0.7709 | 0.9303 | 0.7556 |
+| Semantic-only alpha=0.0 | 0.6652 | 1.0000 | 0.5656 | 0.8931 | 0.6268 |
+| Hybrid alpha=0.5 | 0.9913 | 1.0000 | 0.9976 | 1.0000 | 0.9453 |
 
 ---
 
@@ -138,7 +138,9 @@ biomedical-evidence-retrieval/
 │   ├── candidates_alpha_0_5.json  # Top-10 candidates used for relevance labelling
 │   ├── evaluate.py            # Evaluation script
 │   ├── compare_retrievers.py  # Retriever comparison script (V2.3)
-│   └── compare_reranker.py    # Reranker experiment script (V2.4)
+│   ├── compare_reranker.py    # Reranker experiment script (V2.4)
+│   ├── collect_unlabeled_candidates.py  # Candidate collection for labeling
+│   └── unlabeled_candidates_alpha_0_5.json  # Unlabeled top-10 candidates
 ├── tests/
 │   ├── test_bm25_retriever.py
 │   ├── test_semantic_retriever.py
@@ -235,7 +237,7 @@ To narrow results, expand the "Filters (optional)" section and enter a value for
 
 ## Evaluation
 
-The evaluation script measures retrieval quality over 14 manually curated queries defined in `eval/queries.json`. Judgments use a graded relevance scale (0 = not relevant, 1 = partially relevant, 2 = highly relevant); NCT IDs absent from a query's judgments are treated as relevance 0.
+The evaluation script measures retrieval quality over 46 manually curated Parkinson-related queries defined in `eval/queries.json`. All 46 queries have graded judgments. Judgments use a graded relevance scale (0 = not relevant, 1 = partially relevant, 2 = highly relevant); NCT IDs absent from a query's judgments are treated as relevance 0.
 
 ```bash
 # Evaluate with default alpha=0.5
@@ -265,7 +267,7 @@ Metrics reported per query:
 - Data is limited to trials matching a single condition filter (Parkinson disease) from ClinicalTrials.gov.
 - The embedding model (`all-MiniLM-L6-v2`) is a general-purpose model, not specialised for biomedical text.
 - Summaries are template-based and only include fields present in the database — no language generation.
-- Evaluation relevance labels are manually assigned by reviewing retrieved candidates; the benchmark covers 14 candidate-based queries and should be expanded with broader, independently sourced judgments before being used as a rigorous benchmark.
+- Evaluation relevance labels are manually assigned by reviewing retrieved candidates; the benchmark covers 46 candidate-based queries and should be expanded with broader, independently sourced judgments before being used as a rigorous benchmark.
 - No authentication, no cloud deployment, no persistent user sessions.
 
 ---
@@ -273,9 +275,7 @@ Metrics reported per query:
 ## Future Improvements
 
 - Add PubMed as a second data source and merge results across sources.
-- Replace the general embedding model with a biomedical-domain model such as `BioLORD` or `PubMedBERT`.
-- Add LLM-based abstractive summaries as an optional V2 feature.
 - Add FAISS for faster approximate nearest-neighbour search at scale.
 - Add GitHub Actions for automated testing on push.
 - Add Docker for reproducible deployment.
-- Expand the evaluation query set with real relevance judgements.
+- Expand beyond candidate-based judgments using independently sourced relevance labels.
