@@ -6,7 +6,7 @@ A portfolio project that benchmarks hybrid retrieval over clinical trial records
 
 ## Overview
 
-This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request. Results can be narrowed using optional filters for status, phase, and study type. Retrieval quality is measured against a curated benchmark of 46 Parkinson-related queries with graded relevance judgments.
+This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request. Results can be narrowed using optional filters for status, phase, and study type. Retrieval quality is measured against a curated benchmark of 46 Parkinson-related queries with graded relevance judgments. Stack: Python, FastAPI, Streamlit, SQLite, rank-bm25, sentence-transformers, pytest.
 
 ---
 
@@ -114,6 +114,14 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 - **This is retrieval-based trial matching only.** It does not perform clinical eligibility reasoning and does not claim that a patient is eligible or suitable for any trial. No medical decision support is implied.
 - **Tests expanded** to include Trial Matching Lite schema validation covering both input and output file structure, rank-to-label mapping, and compatibility reason content.
 
+Run Trial Matching Lite with:
+
+```bash
+python -m eval.trial_matching_lite
+```
+
+The FastAPI backend must be running first.
+
 ---
 
 ## V3.3 — Retrieval Error Analysis
@@ -123,6 +131,12 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 - **Added `tests/test_error_analysis.py`** — pytest tests that validate the structure and content of `error_analysis.json`.
 - **Common failure modes identified:** `synonym_mismatch`, `semantic_drift`, `lexical_overmatch`, `biomarker_vs_treatment_confusion`, `nonmotor_symptom_ambiguity`, `field_specificity_gap`, and `candidate_pool_bias`.
 - **This is qualitative retrieval error analysis only.** It does not constitute clinical validation and all observations are specific to this candidate-based benchmark corpus.
+
+Summarize error analysis with:
+
+```bash
+python -m eval.summarize_error_analysis
+```
 
 ---
 
