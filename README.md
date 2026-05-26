@@ -51,6 +51,25 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## V2.3 — Biomedical Embedding Comparison
+
+- **Added a standalone biomedical embedding workflow** using `FremyCompany/BioLORD-2023`, a model trained on biomedical and clinical text. Embeddings are saved to `indexes/biomedical_embeddings.npy` with a JSON index at `indexes/biomedical_embedding_index.json`, separate from the general embeddings workflow.
+- **Added `biomedical_semantic_retriever.py`** — a standalone retriever that loads the BioLORD embeddings and JSON index without touching the existing `semantic_retriever.py` or the database `embedding_index` table.
+- **Added `compare_retrievers.py`** — a standalone script that runs all four methods directly against `eval/queries.json` and prints a benchmark table.
+- **Biomedical embeddings did not improve retrieval** on this candidate-based benchmark. BioLORD scored lower than the general model across all metrics, likely because the relevance labels were derived from general-model candidates and the trial corpus is short search-text rather than full clinical prose.
+- **The project keeps the existing standard semantic model** (`all-MiniLM-L6-v2`) as the default for now.
+
+### Benchmark Results
+
+| Method | Precision@5 | Hit@5 | Recall@10 | MRR |
+|---|---:|---:|---:|---:|
+| BM25-only | 0.757 | 0.929 | 0.765 | 0.817 |
+| Semantic standard | 0.671 | 1.000 | 0.620 | 0.821 |
+| Semantic biomedical | 0.243 | 0.643 | 0.241 | 0.465 |
+| Hybrid standard | 0.886 | 1.000 | 1.000 | 0.907 |
+
+---
+
 ## Project Structure
 
 ```
@@ -62,14 +81,16 @@ biomedical-evidence-retrieval/
 │   ├── download.py            # Download raw trial data
 │   ├── ingest.py              # Parse and load into SQLite
 │   ├── build_bm25_index.py    # Build BM25 index
-│   └── build_embeddings.py    # Build sentence embeddings
+│   ├── build_embeddings.py    # Build sentence embeddings
+│   └── build_biomedical_embeddings.py  # Build BioLORD embeddings (V2.3)
 ├── app/
 │   ├── db.py                  # Database access layer
 │   ├── models.py              # TrialRecord and SearchResult dataclasses
 │   ├── retrieval/
 │   │   ├── bm25_retriever.py
 │   │   ├── semantic_retriever.py
-│   │   └── hybrid_scorer.py
+│   │   ├── hybrid_scorer.py
+│   │   └── biomedical_semantic_retriever.py  # BioLORD retriever (V2.3)
 │   ├── summary/
 │   │   └── template_summary.py
 │   └── api/
@@ -80,7 +101,8 @@ biomedical-evidence-retrieval/
 ├── eval/
 │   ├── queries.json           # Curated evaluation queries
 │   ├── candidates_alpha_0_5.json  # Top-10 candidates used for relevance labelling
-│   └── evaluate.py            # Evaluation script
+│   ├── evaluate.py            # Evaluation script
+│   └── compare_retrievers.py  # Retriever comparison script (V2.3)
 ├── tests/
 │   ├── test_bm25_retriever.py
 │   ├── test_semantic_retriever.py

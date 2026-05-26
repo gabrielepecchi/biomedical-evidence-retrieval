@@ -25,3 +25,7 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Biomedical retrieval indexes
+indexes/biomedical_embeddings.npy
+indexes/biomedical_embedding_index.json
