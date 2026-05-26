@@ -28,27 +28,22 @@ router = APIRouter()
 
 
 class HealthResponse(BaseModel):
-    """Response model for the /health endpoint."""
-
     status: str
     corpus_size: int
 
 
 class InterventionItem(BaseModel):
-    """A single intervention with type and name."""
-
     intervention_type: str | None
     intervention_name: str | None
 
 
 class SearchResultItem(BaseModel):
-    """A single ranked trial result returned by /search."""
-
     rank: int
     nct_id: str
     title: str
     overall_status: str | None
     phase: str | None
+    study_type: str | None
     conditions: list[str]
     interventions: list[InterventionItem]
     brief_summary: str | None
@@ -59,8 +54,6 @@ class SearchResultItem(BaseModel):
 
 
 class SearchResponse(BaseModel):
-    """Response model for the /search endpoint."""
-
     query: str
     top_n: int
     alpha: float
@@ -68,8 +61,6 @@ class SearchResponse(BaseModel):
 
 
 class SummaryResponse(BaseModel):
-    """Response model for the /summary/{nct_id} endpoint."""
-
     nct_id: str
     summary: str
     fields_used: list[str]
@@ -81,11 +72,6 @@ class SummaryResponse(BaseModel):
 
 
 def _fields_used_from_summary(summary: str) -> list[str]:
-    """
-    Extract the ordered, deduplicated list of bracketed field labels from the summary.
-
-    For example, '[Title]' and '[Conditions]' become ['Title', 'Conditions'].
-    """
     labels = re.findall(r"\[([^\]]+)\]", summary)
     seen: set[str] = set()
     unique: list[str] = []
@@ -96,6 +82,15 @@ def _fields_used_from_summary(summary: str) -> list[str]:
     return unique
 
 
+def _matches_filter(value: str | None, filter_value: str | None) -> bool:
+    """Case-insensitive exact match. Returns True if no filter is set."""
+    if filter_value is None:
+        return True
+    if value is None:
+        return False
+    return value.strip().lower() == filter_value.strip().lower()
+
+
 # ---------------------------------------------------------------------------
 # Endpoints
 # ---------------------------------------------------------------------------
@@ -103,7 +98,6 @@ def _fields_used_from_summary(summary: str) -> list[str]:
 
 @router.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
-    """Return API status and the number of trials currently in the database."""
     conn = get_connection()
     size = get_corpus_size(conn)
     conn.close()
@@ -115,28 +109,35 @@ def search(
     q: str = Query(default="", description="Search query"),
     top_n: int = Query(default=10, ge=1, le=20, description="Number of results to return (1–20)"),
     alpha: float = Query(default=0.5, ge=0.0, le=1.0, description="BM25 weight (0.0–1.0)"),
+    overall_status: str | None = Query(default=None, description="Filter by overall_status (case-insensitive)"),
+    phase: str | None = Query(default=None, description="Filter by phase (case-insensitive)"),
+    study_type: str | None = Query(default=None, description="Filter by study_type (case-insensitive)"),
 ) -> SearchResponse:
-    """
-    Search for clinical trials using hybrid BM25 + semantic retrieval.
-
-    Returns up to top_n results ranked by hybrid score.
-    Returns an empty results list if the query is blank.
-    """
     if not q or not q.strip():
         return SearchResponse(query=q, top_n=top_n, alpha=alpha, results=[])
 
     bm25_results = bm25_retrieve(q)
     semantic_results = semantic_retrieve(q)
     scored = hybrid_score(bm25_results, semantic_results, alpha=alpha)
-    top_scored = scored[:top_n]
 
     conn = get_connection()
     results: list[SearchResultItem] = []
+    rank = 1
 
-    for rank, item in enumerate(top_scored, start=1):
+    for item in scored:
+        if len(results) >= top_n:
+            break
+
         nct_id = str(item["nct_id"])
         trial = get_trial_by_nct_id(conn, nct_id)
         if trial is None:
+            continue
+
+        if not _matches_filter(trial.overall_status, overall_status):
+            continue
+        if not _matches_filter(trial.phase, phase):
+            continue
+        if not _matches_filter(trial.study_type, study_type):
             continue
 
         results.append(
@@ -146,6 +147,7 @@ def search(
                 title=trial.title,
                 overall_status=trial.overall_status,
                 phase=trial.phase,
+                study_type=trial.study_type,
                 conditions=trial.conditions,
                 interventions=[
                     InterventionItem(
@@ -161,6 +163,7 @@ def search(
                 url=trial.url,
             )
         )
+        rank += 1
 
     conn.close()
     return SearchResponse(query=q, top_n=top_n, alpha=alpha, results=results)
@@ -168,11 +171,6 @@ def search(
 
 @router.get("/summary/{nct_id}", response_model=SummaryResponse)
 def summary(nct_id: str) -> SummaryResponse:
-    """
-    Return a template-based plain-text summary for a single trial.
-
-    Raises HTTP 404 if the NCT ID is not found in the database.
-    """
     conn = get_connection()
     trial = get_trial_by_nct_id(conn, nct_id)
     conn.close()

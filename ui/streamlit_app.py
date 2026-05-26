@@ -11,14 +11,25 @@ BASE_URL = "http://localhost:8000"
 # ---------------------------------------------------------------------------
 
 
-def call_search(query: str, top_n: int, alpha: float) -> dict | None:
+def call_search(
+    query: str,
+    top_n: int,
+    alpha: float,
+    overall_status: str,
+    phase: str,
+    study_type: str,
+) -> dict | None:
     """Call the /search endpoint and return the parsed JSON, or None on error."""
+    params: dict = {"q": query, "top_n": top_n, "alpha": alpha}
+    if overall_status:
+        params["overall_status"] = overall_status
+    if phase:
+        params["phase"] = phase
+    if study_type:
+        params["study_type"] = study_type
+
     try:
-        response = requests.get(
-            f"{BASE_URL}/search",
-            params={"q": query, "top_n": top_n, "alpha": alpha},
-            timeout=15,
-        )
+        response = requests.get(f"{BASE_URL}/search", params=params, timeout=15)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.ConnectionError:
@@ -78,6 +89,7 @@ def render_result(result: dict) -> None:
         st.markdown(f"**Title:** {title}")
         st.markdown(f"**Overall Status:** {result.get('overall_status') or '—'}")
         st.markdown(f"**Phase:** {result.get('phase') or '—'}")
+        st.markdown(f"**Study Type:** {result.get('study_type') or '—'}")
 
         conditions = result.get("conditions") or []
         st.markdown(f"**Conditions:** {', '.join(conditions) if conditions else '—'}")
@@ -148,12 +160,40 @@ def main() -> None:
     with col2:
         top_n = st.selectbox("Number of results", options=[5, 10, 20], index=1)
 
+    with st.expander("Filters (optional)"):
+        filter_col1, filter_col2, filter_col3 = st.columns(3)
+        with filter_col1:
+            overall_status = st.text_input(
+                "Overall Status",
+                placeholder="e.g. Recruiting",
+                help="Case-insensitive exact match",
+            )
+        with filter_col2:
+            phase = st.text_input(
+                "Phase",
+                placeholder="e.g. Phase 2",
+                help="Case-insensitive exact match",
+            )
+        with filter_col3:
+            study_type = st.text_input(
+                "Study Type",
+                placeholder="e.g. Interventional",
+                help="Case-insensitive exact match",
+            )
+
     if st.button("Search", type="primary"):
         if not query or not query.strip():
             st.warning("Please enter a search query.")
         else:
             with st.spinner("Searching..."):
-                data = call_search(query, top_n=top_n, alpha=alpha)
+                data = call_search(
+                    query,
+                    top_n=top_n,
+                    alpha=alpha,
+                    overall_status=overall_status.strip(),
+                    phase=phase.strip(),
+                    study_type=study_type.strip(),
+                )
             if data is not None:
                 st.session_state["search_results"] = data.get("results") or []
                 st.session_state["search_query"] = query

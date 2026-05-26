@@ -6,7 +6,7 @@ A portfolio project that lets you search clinical trial records using a hybrid r
 
 ## Overview
 
-This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request.
+This platform indexes clinical trials from [ClinicalTrials.gov](https://clinicaltrials.gov) into a local SQLite database and provides keyword-based and semantic search over trial records. Results are ranked using a configurable hybrid score. A simple template-based summary is generated for each trial on request. Results can be narrowed using optional filters for status, phase, and study type.
 
 ---
 
@@ -21,6 +21,16 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 - **Summaries:** Template-based only — no LLMs, no external calls
 - **Tests:** pytest unit tests for retrieval, scoring, summaries, and API routes
 - **Evaluation:** Precision@5 and Hit@5 over a manually curated query set
+
+---
+
+## V2.1 — Filtered Search
+
+- **`/search` optional filters:** `overall_status`, `phase`, and `study_type` query parameters added. Filters use case-insensitive exact matching and are applied after hybrid scoring. Omitting a filter returns all results as before.
+- **Streamlit UI filters:** An expandable "Filters (optional)" section in the UI exposes all three filter fields as free-text inputs. Filters are passed to the API only when non-empty; leaving them blank preserves the existing search behaviour.
+- **Study Type in results:** Each result card in the Streamlit UI now displays Study Type alongside Status and Phase.
+- **Retrieval unchanged:** BM25 + semantic + hybrid scoring pipeline is identical to V1.
+- **Tests:** All 25 tests pass. Filter tests mock the retrieval layer so they run without requiring built indexes.
 
 ---
 
@@ -126,6 +136,9 @@ python -m streamlit run ui/streamlit_app.py
 ![FastAPI interactive API docs](assets/screenshots/api-docs.png)
 *FastAPI interactive API docs*
 
+![Filtered search with optional status, phase, and study type filters](assets/screenshots/filtered-search.png)
+*Filtered search with optional status, phase, and study type filters.*
+
 ---
 
 ## Example Queries
@@ -139,6 +152,8 @@ These queries work well against the Parkinson disease trial dataset:
 - `exercise rehabilitation gait freezing Parkinson`
 
 Use the `alpha` slider in the Streamlit UI to adjust the balance between BM25 and semantic retrieval. `alpha=1.0` is BM25-only; `alpha=0.0` is semantic-only; `alpha=0.5` is balanced.
+
+To narrow results, expand the "Filters (optional)" section and enter a value for Overall Status (e.g. `Recruiting`), Phase (e.g. `Phase 2`), or Study Type (e.g. `Interventional`). Leave any field blank to skip that filter.
 
 ---
 
