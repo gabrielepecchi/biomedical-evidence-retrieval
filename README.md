@@ -322,8 +322,7 @@ pytest
 
 ## Future Improvements
 
-- Add PubMed as a second data source and merge results across sources.
-- Add FAISS for faster approximate nearest-neighbour search at scale.
-- Add GitHub Actions for automated testing on push.
-- Add Docker for reproducible deployment.
-- Expand beyond candidate-based judgments using independently sourced relevance labels.
+- Add GitHub Actions for automated `pytest` on push.
+- Build a multi-method pooled candidate file to reduce candidate-pool bias before any future manual relevance-label audit.
+- Improve reproducibility notes and verify clean-environment setup and dependency versions.
+- Add a short "What this project demonstrates" section for portfolio readability.
