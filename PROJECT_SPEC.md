@@ -1,6 +1,6 @@
 # Biomedical Evidence Retrieval Benchmark — Project Specification
 
-Current version: **V3.3**. This document describes the full project scope through V3.3. It is the authoritative specification; README.md is the authoritative run reference.
+Current version: **V3.6**. This document describes the full project scope through V3.6. It is the authoritative specification; README.md is the authoritative run reference.
 
 ---
 
@@ -12,7 +12,7 @@ Current version: **V3.3**. This document describes the full project scope throug
 
 ## 2. Overview
 
-A local portfolio project demonstrating end-to-end biomedical information retrieval over a curated snapshot of ClinicalTrials.gov data. A user types a plain-text query and receives a ranked list of Parkinson disease clinical trials. Retrieval combines BM25 keyword matching with dense semantic embeddings into a configurable hybrid score. Retrieval quality is measured against a 46-query graded benchmark. Additional experiments cover biomedical embeddings, cross-encoder reranking, trial matching against synthetic patient cases, and qualitative retrieval error analysis.
+A local portfolio project demonstrating end-to-end biomedical information retrieval over a curated snapshot of ClinicalTrials.gov data. A user types a plain-text query and receives a ranked list of Parkinson disease clinical trials. Retrieval combines BM25 keyword matching with dense semantic embeddings into a configurable hybrid score. Retrieval quality is measured against a 46-query graded benchmark. Additional experiments cover biomedical embeddings, cross-encoder reranking, trial matching against synthetic patient cases, qualitative retrieval error analysis, and multi-method candidate pooling.
 
 Stack: Python, FastAPI, Streamlit, SQLite, rank-bm25, sentence-transformers, pytest.
 
@@ -87,6 +87,14 @@ This project extends a biomedical engineering portfolio into areas expected in d
 - Failure modes identified: `synonym_mismatch`, `semantic_drift`, `lexical_overmatch`, `biomarker_vs_treatment_confusion`, `nonmotor_symptom_ambiguity`, `field_specificity_gap`, `candidate_pool_bias`.
 - **Qualitative analysis only.** All observations are specific to this candidate-based benchmark corpus.
 
+### V3.6 — Multi-Method Candidate Pooling
+
+- `eval/collect_unlabeled_candidates.py` processes all 46 queries and pools top-10 candidates from four retrieval methods: BM25, standard semantic, hybrid (alpha=0.5), and biomedical semantic (if BioLORD indexes are available).
+- Candidates are deduplicated by `nct_id`; each entry records which methods returned it in a `sources` field.
+- Output is written to `eval/unlabeled_candidates_alpha_0_5.json`.
+- For future manual relevance auditing only. Does not change existing relevance labels, benchmark scores, retrieval code, API, or UI.
+- Benchmark remains candidate-based and not clinically validated.
+
 ---
 
 ## 5. Non-Goals (Current)
@@ -97,7 +105,6 @@ This project extends a biomedical engineering portfolio into areas expected in d
 - Live API polling or real-time data ingestion.
 - Production deployment, containerisation, or cloud infrastructure.
 - FAISS or approximate nearest-neighbour search.
-- GitHub Actions CI (planned, not yet implemented).
 - Multi-language support or PDF parsing.
 
 ---
@@ -178,7 +185,6 @@ This project extends a biomedical engineering portfolio into areas expected in d
 
 ## 10. Future Conservative Improvements
 
-- GitHub Actions CI for automated `pytest` on push.
-- Multi-method candidate pooling to reduce candidate-pool bias before any future relevance audit.
+- Manual relevance-label audit using the pooled candidate file (`eval/unlabeled_candidates_alpha_0_5.json`).
 - Dependency pinning and reproducibility documentation.
 - Portfolio and README polish.

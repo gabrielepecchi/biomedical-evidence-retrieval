@@ -1,6 +1,6 @@
 # Implementation History — Biomedical Evidence Retrieval Benchmark
 
-Current version: **V3.3**. This document is a build log recording what was implemented in each version, the decisions made, and the current validation checklist. It is not a step-by-step build guide for V1 from scratch.
+Current version: **V3.6**. This document is a build log recording what was implemented in each version, the decisions made, and the current validation checklist. It is not a step-by-step build guide for V1 from scratch.
 
 ---
 
@@ -61,7 +61,7 @@ Current version: **V3.3**. This document is a build log recording what was imple
 
 ---
 
-## V3 — Benchmark, Trial Matching, and Error Analysis
+## V3 — Benchmark, Trial Matching, Error Analysis, and Candidate Pooling
 
 ### V3.1 — Graded Retrieval Benchmark
 
@@ -86,11 +86,17 @@ Current version: **V3.3**. This document is a build log recording what was imple
 - Failure modes identified: `synonym_mismatch`, `semantic_drift`, `lexical_overmatch`, `biomarker_vs_treatment_confusion`, `nonmotor_symptom_ambiguity`, `field_specificity_gap`, `candidate_pool_bias`.
 - **Qualitative analysis only.** Specific to this candidate-based corpus. Not clinical validation.
 
+### V3.6 — Multi-Method Candidate Pooling
+
+- `eval/collect_unlabeled_candidates.py` — processes all 46 queries; pools top-10 candidates from BM25, standard semantic, hybrid (alpha=0.5), and biomedical semantic (if BioLORD indexes are available); deduplicates by `nct_id`; records source methods in a `sources` field; writes output to `eval/unlabeled_candidates_alpha_0_5.json`.
+- For future manual relevance auditing only. Does not change existing relevance labels, benchmark scores, retrieval code, API, or UI.
+- No new tests added; no existing tests modified.
+
 ---
 
 ## Current Validation Checklist
 
-Run these checks to confirm V3.3 is fully operational:
+Run these checks to confirm V3.6 is fully operational:
 
 ```bash
 # 1. Full test suite
@@ -108,18 +114,21 @@ python -m eval.trial_matching_lite
 # 4. Error analysis summary
 python -m eval.summarize_error_analysis
 
-# 5. Optional standalone comparisons (require indexes and FastAPI)
+# 5. Multi-method candidate pooling (requires indexes; BioLORD optional)
+python -m eval.collect_unlabeled_candidates
+
+# 6. Optional standalone comparisons (require indexes and FastAPI)
 python -m eval.compare_retrievers
 python -m eval.compare_reranker
 ```
 
-Expected: all 8 test files pass; benchmark numbers match V3.1 results in README; `trial_matching_lite` produces a valid JSON output; `summarize_error_analysis` prints a clean summary table.
+Expected: all 8 test files pass; benchmark numbers match V3.1 results in README; `trial_matching_lite` produces a valid JSON output; `summarize_error_analysis` prints a clean summary table; `collect_unlabeled_candidates` produces `eval/unlabeled_candidates_alpha_0_5.json`.
 
 ---
 
 ## Future Conservative Improvements
 
 - Add GitHub Actions CI for automated `pytest` on push.
-- Build a multi-method pooled candidate file to reduce candidate-pool bias before any future manual relevance-label audit.
+- Manual relevance-label audit using the pooled candidate file (`eval/unlabeled_candidates_alpha_0_5.json`).
 - Improve reproducibility documentation: verify clean-environment setup, pin all dependency versions.
 - Add a short "What this project demonstrates" section to README for portfolio readability.

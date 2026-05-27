@@ -1,6 +1,6 @@
 # Repository Structure — Biomedical Evidence Retrieval Benchmark
 
-This document describes the current repository layout as of **V3.3**. It reflects the actual files in the project; README.md is the authoritative run reference.
+This document describes the current repository layout as of **V3.6**. It reflects the actual files in the project; README.md is the authoritative run reference.
 
 ---
 
@@ -11,7 +11,7 @@ This document describes the current repository layout as of **V3.3**. It reflect
 | Setup scripts | `scripts/` | Download raw data, parse into SQLite, build retrieval indexes |
 | Application logic | `app/` | Database helpers, retrieval pipeline, summary generator, FastAPI endpoints |
 | User interface | `ui/` | Streamlit front end |
-| Evaluation | `eval/` | Query set, evaluation scripts, experiment scripts, error analysis |
+| Evaluation | `eval/` | Query set, evaluation scripts, experiment scripts, error analysis, candidate pooling |
 | Tests | `tests/` | pytest unit and integration tests |
 | Assets | `assets/screenshots/` | UI screenshots referenced in README |
 
@@ -39,8 +39,7 @@ biomedical-evidence-retrieval/
 │       ├── search-home.png
 │       ├── search-results.png
 │       ├── grounded-summary.png
-│       ├── api-docs.png
-│       └── filtered-search.png
+│       └── api-docs.png
 │
 ├── data/
 │   └── raw/                            # git-ignored
@@ -85,8 +84,8 @@ biomedical-evidence-retrieval/
 ├── eval/
 │   ├── queries.json                          # 46-query graded benchmark
 │   ├── candidates_alpha_0_5.json             # top-10 candidates used for labelling
-│   ├── unlabeled_candidates_alpha_0_5.json   # unlabeled candidates for future audit
-│   ├── collect_unlabeled_candidates.py       # candidate collection script
+│   ├── unlabeled_candidates_alpha_0_5.json   # pooled candidates for future manual audit
+│   ├── collect_unlabeled_candidates.py       # V3.6 — multi-method candidate pooling script
 │   ├── evaluate.py                           # main evaluation script
 │   ├── compare_retrievers.py                 # V2.3 — multi-retriever comparison
 │   ├── compare_reranker.py                   # V2.4 — reranker experiment
@@ -114,11 +113,11 @@ biomedical-evidence-retrieval/
 
 ### Root files
 
-**`README.md`** — Authoritative run reference. Describes setup, run order, evaluation commands, benchmark results, and limitations through V3.3.
+**`README.md`** — Authoritative run reference. Describes setup, run order, evaluation commands, benchmark results, and limitations through V3.6.
 
-**`PROJECT_SPEC.md`** — Project specification covering all versions V1–V3.3: scope, functional requirements, architecture, evaluation methodology, and limitations.
+**`PROJECT_SPEC.md`** — Project specification covering all versions V1–V3.6: scope, functional requirements, architecture, evaluation methodology, and limitations.
 
-**`IMPLEMENTATION_PLAN.md`** — Implementation history and build log through V3.3. Records what was built in each version and the current validation checklist.
+**`IMPLEMENTATION_PLAN.md`** — Implementation history and build log through V3.6. Records what was built in each version and the current validation checklist.
 
 **`REPO_STRUCTURE.md`** — This file. Current repository layout.
 
@@ -176,8 +175,8 @@ Run once in order to set up data and indexes before starting the application.
 |---|---|
 | `queries.json` | 46 graded queries (relevance 0/1/2 per NCT ID) |
 | `candidates_alpha_0_5.json` | Top-10 candidates per query used for original relevance labelling |
-| `unlabeled_candidates_alpha_0_5.json` | Unlabeled candidate pool for future manual audit |
-| `collect_unlabeled_candidates.py` | Collects candidates from multiple retrieval methods for pooling |
+| `unlabeled_candidates_alpha_0_5.json` | Pooled multi-method candidates for future manual relevance audit (V3.6) |
+| `collect_unlabeled_candidates.py` | Multi-method candidate pooling script; pools BM25, semantic, hybrid, and BioLORD candidates across all 46 queries (V3.6) |
 | `evaluate.py` | Computes Precision@5, Hit@5, Recall@10, MRR, nDCG@10; accepts `--alpha` |
 | `compare_retrievers.py` | Runs BM25, standard semantic, biomedical semantic, and hybrid; prints comparison table (V2.3) |
 | `compare_reranker.py` | Retrieves top-50 hybrid candidates per query; reranks with CrossEncoder (V2.4) |

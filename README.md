@@ -142,6 +142,23 @@ python -m eval.summarize_error_analysis
 
 ---
 
+## V3.6 — Multi-Method Candidate Pooling
+
+- **`eval/collect_unlabeled_candidates.py` now collects candidates for all 46 queries** across multiple retrieval methods, rather than only for queries with empty judgments.
+- **Pooling methods:** top-10 candidates from BM25, standard semantic, hybrid alpha=0.5, and biomedical semantic (BioLORD) if its indexes are available.
+- **Candidates are deduplicated by `nct_id`** within each query. Each candidate records which method(s) produced it in a `sources` list alongside per-method scores.
+- **Output written to `eval/unlabeled_candidates_alpha_0_5.json`** — a pooled candidate file for future manual relevance auditing only.
+- **`eval/queries.json`, benchmark labels, benchmark scores, retrieval code, API, and UI are unchanged.**
+- The benchmark remains candidate-based and not clinically validated.
+
+Run multi-method candidate pooling with:
+
+```bash
+python -m eval.collect_unlabeled_candidates
+```
+
+---
+
 ## Project Structure
 
 ```
@@ -176,8 +193,8 @@ biomedical-evidence-retrieval/
 │   ├── evaluate.py            # Evaluation script
 │   ├── compare_retrievers.py  # Retriever comparison script (V2.3)
 │   ├── compare_reranker.py    # Reranker experiment script (V2.4)
-│   ├── collect_unlabeled_candidates.py  # Candidate collection for labeling
-│   ├── unlabeled_candidates_alpha_0_5.json  # Unlabeled top-10 candidates
+│   ├── collect_unlabeled_candidates.py  # Multi-method candidate pooling script (V3.6)
+│   ├── unlabeled_candidates_alpha_0_5.json  # Pooled candidates for future manual audit (V3.6)
 │   ├── patient_cases.json           # Synthetic patient cases for Trial Matching Lite (V3.2)
 │   ├── trial_matching_lite.py       # Trial Matching Lite retrieval script (V3.2)
 │   ├── patient_case_matches_alpha_0_5.json  # Trial Matching Lite output (V3.2)
@@ -322,6 +339,6 @@ pytest
 ## Future Improvements
 
 - Add GitHub Actions for automated `pytest` on push.
-- Build a multi-method pooled candidate file to reduce candidate-pool bias before any future manual relevance-label audit.
+- Conduct a manual relevance-label audit using the pooled candidate file to reduce candidate-pool bias.
 - Improve reproducibility notes and verify clean-environment setup and dependency versions.
 - Add a short "What this project demonstrates" section for portfolio readability.
