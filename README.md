@@ -12,6 +12,18 @@ This platform indexes clinical trials from [ClinicalTrials.gov](https://clinical
 
 ---
 
+## What This Project Demonstrates
+
+- **Biomedical information retrieval** over a curated ClinicalTrials.gov snapshot, covering end-to-end pipeline design from raw API data to ranked search results.
+- **Hybrid search** combining BM25 keyword matching and dense semantic embeddings into a configurable weighted score.
+- **REST API and frontend engineering** via a FastAPI backend and a Streamlit UI with optional filters and an alpha slider.
+- **SQLite data modelling and local indexing** including idempotent ingestion, a relational schema, and `.npy` embedding storage.
+- **Retrieval evaluation methodology** measured with Precision@5, Recall@10, MRR, and nDCG@10 over a 46-query graded benchmark.
+- **Error analysis and candidate-pool hardening** through qualitative failure-mode identification and multi-method candidate pooling for future label auditing.
+- **Conservative clinical framing** throughout: results are not clinical decision support, relevance labels are candidate-based and not clinically validated, and all limitations are stated explicitly.
+
+---
+
 ## V1 Scope
 
 - **Data source:** ClinicalTrials.gov (V2 API, condition filter: Parkinson disease)
@@ -349,4 +361,3 @@ pytest
 ## Future Improvements
 
 - Conduct a manual relevance-label audit using the pooled candidate file to reduce candidate-pool bias.
-- Add a short "What this project demonstrates" section for portfolio readability.
