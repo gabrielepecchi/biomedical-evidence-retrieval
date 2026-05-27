@@ -1,5 +1,7 @@
 # Biomedical Evidence Retrieval Benchmark
 
+[![CI](https://github.com/gabrielepecchi/biomedical-evidence-retrieval/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielepecchi/biomedical-evidence-retrieval/actions/workflows/ci.yml)
+
 A portfolio project that benchmarks hybrid retrieval over clinical trial records, combining BM25 and semantic similarity, with a FastAPI backend and a Streamlit frontend.
 
 ---
@@ -244,8 +246,8 @@ python -m streamlit run ui/streamlit_app.py
 
 ## Screenshots
 
-![Streamlit search interface](assets/screenshots/search-home.png)
-*Streamlit search interface*
+![Streamlit search interface with optional filters](assets/screenshots/search-home.png)
+*Streamlit search interface with optional status, phase, and study type filters*
 
 ![Search results with hybrid scores](assets/screenshots/search-results.png)
 *Search results with hybrid scores*
@@ -255,9 +257,6 @@ python -m streamlit run ui/streamlit_app.py
 
 ![FastAPI interactive API docs](assets/screenshots/api-docs.png)
 *FastAPI interactive API docs*
-
-![Filtered search with optional status, phase, and study type filters](assets/screenshots/filtered-search.png)
-*Filtered search with optional status, phase, and study type filters.*
 
 ---
 
