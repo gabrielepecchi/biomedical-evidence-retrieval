@@ -124,11 +124,11 @@ python -m eval.compare_reranker
 
 Expected: all 8 test files pass; benchmark numbers match V3.1 results in README; `trial_matching_lite` produces a valid JSON output; `summarize_error_analysis` prints a clean summary table; `collect_unlabeled_candidates` produces `eval/unlabeled_candidates_alpha_0_5.json`.
 
+> **Reproducibility:** all dependencies are pinned in `requirements.txt`. Generated artefacts (`data/raw/`, `db/trials.db`, `indexes/`) are git-ignored and must be rebuilt locally by running the scripts in Run Order.
+
 ---
 
 ## Future Conservative Improvements
 
-- Add GitHub Actions CI for automated `pytest` on push.
 - Manual relevance-label audit using the pooled candidate file (`eval/unlabeled_candidates_alpha_0_5.json`).
-- Improve reproducibility documentation: verify clean-environment setup, pin all dependency versions.
 - Add a short "What this project demonstrates" section to README for portfolio readability.

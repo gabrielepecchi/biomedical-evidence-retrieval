@@ -261,6 +261,16 @@ python -m streamlit run ui/streamlit_app.py
 
 ---
 
+## Reproducibility Notes
+
+- Tested with **Python 3.12**.
+- All dependencies are pinned in `requirements.txt`. Install with `pip install -r requirements.txt`.
+- Generated artefacts are not committed to the repository: `data/raw/`, `db/trials.db`, and `indexes/` are git-ignored and must be regenerated locally by running Steps 1–4 in Run Order above.
+- To fully reproduce the local application, run `scripts/download`, `scripts/ingest`, `scripts/build_bm25_index`, and `scripts/build_embeddings` in order, then start the FastAPI backend and the Streamlit frontend.
+- Biomedical embeddings (`indexes/biomedical_embeddings.npy`) are optional. They are only required for the BioLORD retriever comparison (`eval/compare_retrievers.py`) and candidate pooling with the biomedical semantic method (`eval/collect_unlabeled_candidates.py`). The main application and benchmark use only the standard embeddings.
+
+---
+
 ## Screenshots
 
 ![Streamlit search interface with optional filters](assets/screenshots/search-home.png)
@@ -338,7 +348,5 @@ pytest
 
 ## Future Improvements
 
-- Add GitHub Actions for automated `pytest` on push.
 - Conduct a manual relevance-label audit using the pooled candidate file to reduce candidate-pool bias.
-- Improve reproducibility notes and verify clean-environment setup and dependency versions.
 - Add a short "What this project demonstrates" section for portfolio readability.
