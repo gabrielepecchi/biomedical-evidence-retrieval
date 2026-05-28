@@ -46,17 +46,16 @@ A template-based summary is generated per trial on request. Retrieval quality is
 
 ## Screenshots
 
+The Streamlit UI supports filtered search, ranked results with hybrid scores, and grounded per-trial summaries.
+
 ![Streamlit search interface with optional filters](assets/screenshots/search-home.png)
-*Streamlit search interface with optional status, phase, and study type filters*
+*Search interface with optional status, phase, and study type filters*
 
 ![Search results with hybrid scores](assets/screenshots/search-results.png)
-*Search results with hybrid scores*
+*Ranked results with hybrid scores*
 
 ![Grounded summary view](assets/screenshots/grounded-summary.png)
 *Grounded summary view*
-
-![FastAPI interactive API docs](assets/screenshots/api-docs.png)
-*FastAPI interactive API docs*
 
 ---
 
