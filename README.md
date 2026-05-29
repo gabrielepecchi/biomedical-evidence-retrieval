@@ -42,6 +42,14 @@ A template-based summary is generated per trial on request. Retrieval quality is
 
 > **Benchmark caveat:** Relevance labels were assigned by reviewing the top-10 results per query (candidate-based). Scores are high partly because the judge and the retriever share the same candidate pool. These results should not be treated as a definitive clinical benchmark.
 
+### What Won and Why
+
+Hybrid α=0.5 outperformed both single-method baselines across all five reported metrics. BM25 provides strong precision on exact clinical terminology — drug names, anatomical targets, trial phase vocabulary — while semantic retrieval adds recall for queries that use synonyms, paraphrases, or conceptually related terms not present verbatim in the indexed text. Neither method alone is sufficient: BM25 misses synonym-heavy queries and semantic retrieval drifts in dense clinical subdomains. Combining them at equal weight resolved the majority of single-method failures documented in the error analysis. See [BENCHMARK_CARD.md](BENCHMARK_CARD.md) for full methodology and metric definitions.
+
+### Error Analysis
+
+`eval/error_analysis.json` contains 15 qualitative entries documenting cases where BM25-only or semantic-only underperformed hybrid. Seven failure mode categories were identified: `synonym_mismatch`, `semantic_drift`, `lexical_overmatch`, `biomarker_vs_treatment_confusion`, `nonmotor_symptom_ambiguity`, `field_specificity_gap`, and `candidate_pool_bias`. In most documented cases, hybrid scoring at α=0.5 corrects the failure by combining exact token matching with semantic context. Run `python -m eval.summarize_error_analysis` to print a summary table.
+
 ---
 
 ## Screenshots
